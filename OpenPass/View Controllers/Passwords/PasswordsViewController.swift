@@ -15,7 +15,6 @@ class PasswordsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(PasswordCell.self, forCellReuseIdentifier: "passwordCell")
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -41,10 +40,10 @@ class PasswordsViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openAccount" {
-            let vc = segue.destination as! AccountViewController
-            
-            if let selectedCell = tableView.cellForRow(at: sender as! IndexPath) as? PasswordCell {
-                vc.account.name = selectedCell.name.text
+            if let vc = segue.destination as? AccountViewController {
+                if let selectedCell = tableView.cellForRow(at: sender as! IndexPath) as? PasswordCell {
+                    vc.name = selectedCell.name.text
+                }
             }
         }
     }
@@ -69,7 +68,7 @@ class PasswordsViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "passwordCell", for: indexPath) as! PasswordCell
         
         cell.name.text = passwordList[indexPath.row]
-
+        
         return cell
     }
  
