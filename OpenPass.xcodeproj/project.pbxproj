@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE586E9E21D9D2260066BC0E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9D21D9D2260066BC0E /* HomeViewController.swift */; };
+		AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */; };
 		AE586EA021D9D2590066BC0E /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9F21D9D2590066BC0E /* AccountsViewController.swift */; };
 		AE586EA221D9D7330066BC0E /* SingleAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586EA121D9D7330066BC0E /* SingleAccountViewController.swift */; };
 		AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */; };
@@ -17,6 +17,7 @@
 		AE58FEFF21D9B88D00C094F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEFD21D9B88D00C094F1 /* LaunchScreen.storyboard */; };
 		AE58FF0A21D9B88D00C094F1 /* OpenPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */; };
 		AE58FF1521D9B88D00C094F1 /* OpenPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */; };
+		AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE586E9D21D9D2260066BC0E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		AE586E9F21D9D2590066BC0E /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		AE586EA121D9D7330066BC0E /* SingleAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAccountViewController.swift; sourceTree = "<group>"; };
 		AE58FEEE21D9B88A00C094F1 /* OpenPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +54,7 @@
 		AE58FF1021D9B88D00C094F1 /* OpenPassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPassUITests.swift; sourceTree = "<group>"; };
 		AE58FF1621D9B88D00C094F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +139,8 @@
 		AE58FF2221D9B9FF00C094F1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE586E9D21D9D2260066BC0E /* HomeViewController.swift */,
+				AED3FF4F21DA8BCE00D7C042 /* Settings */,
+				AED3FF4B21DA839A00D7C042 /* Authentication */,
 				AE586E9F21D9D2590066BC0E /* AccountsViewController.swift */,
 				AE586EA121D9D7330066BC0E /* SingleAccountViewController.swift */,
 			);
@@ -156,6 +159,22 @@
 			children = (
 			);
 			path = "Classes and Structs";
+			sourceTree = "<group>";
+		};
+		AED3FF4B21DA839A00D7C042 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AED3FF4F21DA8BCE00D7C042 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +310,10 @@
 			files = (
 				AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */,
 				AE586EA221D9D7330066BC0E /* SingleAccountViewController.swift in Sources */,
+				AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */,
 				AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */,
 				AE586EA021D9D2590066BC0E /* AccountsViewController.swift in Sources */,
-				AE586E9E21D9D2260066BC0E /* HomeViewController.swift in Sources */,
+				AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
