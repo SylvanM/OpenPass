@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */; };
+		AE58FEF421D9B88A00C094F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF321D9B88A00C094F1 /* ViewController.swift */; };
+		AE58FEF721D9B88A00C094F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEF521D9B88A00C094F1 /* Main.storyboard */; };
+		AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF821D9B88A00C094F1 /* OpenPass.xcdatamodeld */; };
+		AE58FEFC21D9B88D00C094F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */; };
+		AE58FEFF21D9B88D00C094F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEFD21D9B88D00C094F1 /* LaunchScreen.storyboard */; };
+		AE58FF0A21D9B88D00C094F1 /* OpenPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */; };
+		AE58FF1521D9B88D00C094F1 /* OpenPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE58FF0621D9B88D00C094F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE58FEE621D9B88900C094F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE58FEED21D9B88A00C094F1;
+			remoteInfo = OpenPass;
+		};
+		AE58FF1121D9B88D00C094F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE58FEE621D9B88900C094F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE58FEED21D9B88A00C094F1;
+			remoteInfo = OpenPass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE58FEEE21D9B88A00C094F1 /* OpenPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE58FEF321D9B88A00C094F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE58FEF621D9B88A00C094F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE58FEF921D9B88A00C094F1 /* OpenPass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenPass.xcdatamodel; sourceTree = "<group>"; };
+		AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE58FEFE21D9B88D00C094F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE58FF0021D9B88D00C094F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE58FF0521D9B88D00C094F1 /* OpenPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPassTests.swift; sourceTree = "<group>"; };
+		AE58FF0B21D9B88D00C094F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE58FF1021D9B88D00C094F1 /* OpenPassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPassUITests.swift; sourceTree = "<group>"; };
+		AE58FF1621D9B88D00C094F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE58FEEB21D9B88A00C094F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE58FF0221D9B88D00C094F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE58FF0D21D9B88D00C094F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE58FEE521D9B88900C094F1 = {
+			isa = PBXGroup;
+			children = (
+				AE58FEF021D9B88A00C094F1 /* OpenPass */,
+				AE58FF0821D9B88D00C094F1 /* OpenPassTests */,
+				AE58FF1321D9B88D00C094F1 /* OpenPassUITests */,
+				AE58FEEF21D9B88A00C094F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE58FEEF21D9B88A00C094F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE58FEEE21D9B88A00C094F1 /* OpenPass.app */,
+				AE58FF0521D9B88D00C094F1 /* OpenPassTests.xctest */,
+				AE58FF1021D9B88D00C094F1 /* OpenPassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE58FEF021D9B88A00C094F1 /* OpenPass */ = {
+			isa = PBXGroup;
+			children = (
+				AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */,
+				AE58FEF321D9B88A00C094F1 /* ViewController.swift */,
+				AE58FEF521D9B88A00C094F1 /* Main.storyboard */,
+				AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */,
+				AE58FEFD21D9B88D00C094F1 /* LaunchScreen.storyboard */,
+				AE58FF0021D9B88D00C094F1 /* Info.plist */,
+				AE58FEF821D9B88A00C094F1 /* OpenPass.xcdatamodeld */,
+			);
+			path = OpenPass;
+			sourceTree = "<group>";
+		};
+		AE58FF0821D9B88D00C094F1 /* OpenPassTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */,
+				AE58FF0B21D9B88D00C094F1 /* Info.plist */,
+			);
+			path = OpenPassTests;
+			sourceTree = "<group>";
+		};
+		AE58FF1321D9B88D00C094F1 /* OpenPassUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */,
+				AE58FF1621D9B88D00C094F1 /* Info.plist */,
+			);
+			path = OpenPassUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE58FEED21D9B88A00C094F1 /* OpenPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE58FF1921D9B88D00C094F1 /* Build configuration list for PBXNativeTarget "OpenPass" */;
+			buildPhases = (
+				AE58FEEA21D9B88A00C094F1 /* Sources */,
+				AE58FEEB21D9B88A00C094F1 /* Frameworks */,
+				AE58FEEC21D9B88A00C094F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenPass;
+			productName = OpenPass;
+			productReference = AE58FEEE21D9B88A00C094F1 /* OpenPass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE58FF0421D9B88D00C094F1 /* OpenPassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE58FF1C21D9B88D00C094F1 /* Build configuration list for PBXNativeTarget "OpenPassTests" */;
+			buildPhases = (
+				AE58FF0121D9B88D00C094F1 /* Sources */,
+				AE58FF0221D9B88D00C094F1 /* Frameworks */,
+				AE58FF0321D9B88D00C094F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE58FF0721D9B88D00C094F1 /* PBXTargetDependency */,
+			);
+			name = OpenPassTests;
+			productName = OpenPassTests;
+			productReference = AE58FF0521D9B88D00C094F1 /* OpenPassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE58FF0F21D9B88D00C094F1 /* OpenPassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE58FF1F21D9B88D00C094F1 /* Build configuration list for PBXNativeTarget "OpenPassUITests" */;
+			buildPhases = (
+				AE58FF0C21D9B88D00C094F1 /* Sources */,
+				AE58FF0D21D9B88D00C094F1 /* Frameworks */,
+				AE58FF0E21D9B88D00C094F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE58FF1221D9B88D00C094F1 /* PBXTargetDependency */,
+			);
+			name = OpenPassUITests;
+			productName = OpenPassUITests;
+			productReference = AE58FF1021D9B88D00C094F1 /* OpenPassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE58FEE621D9B88900C094F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Sylvan Martin";
+				TargetAttributes = {
+					AE58FEED21D9B88A00C094F1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					AE58FF0421D9B88D00C094F1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AE58FEED21D9B88A00C094F1;
+					};
+					AE58FF0F21D9B88D00C094F1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AE58FEED21D9B88A00C094F1;
+					};
+				};
+			};
+			buildConfigurationList = AE58FEE921D9B88900C094F1 /* Build configuration list for PBXProject "OpenPass" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE58FEE521D9B88900C094F1;
+			productRefGroup = AE58FEEF21D9B88A00C094F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE58FEED21D9B88A00C094F1 /* OpenPass */,
+				AE58FF0421D9B88D00C094F1 /* OpenPassTests */,
+				AE58FF0F21D9B88D00C094F1 /* OpenPassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE58FEEC21D9B88A00C094F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE58FEFF21D9B88D00C094F1 /* LaunchScreen.storyboard in Resources */,
+				AE58FEFC21D9B88D00C094F1 /* Assets.xcassets in Resources */,
+				AE58FEF721D9B88A00C094F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE58FF0321D9B88D00C094F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE58FF0E21D9B88D00C094F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE58FEEA21D9B88A00C094F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE58FEF421D9B88A00C094F1 /* ViewController.swift in Sources */,
+				AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */,
+				AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE58FF0121D9B88D00C094F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE58FF0A21D9B88D00C094F1 /* OpenPassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE58FF0C21D9B88D00C094F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE58FF1521D9B88D00C094F1 /* OpenPassUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE58FF0721D9B88D00C094F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE58FEED21D9B88A00C094F1 /* OpenPass */;
+			targetProxy = AE58FF0621D9B88D00C094F1 /* PBXContainerItemProxy */;
+		};
+		AE58FF1221D9B88D00C094F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE58FEED21D9B88A00C094F1 /* OpenPass */;
+			targetProxy = AE58FF1121D9B88D00C094F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE58FEF521D9B88A00C094F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE58FEF621D9B88A00C094F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE58FEFD21D9B88D00C094F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE58FEFE21D9B88D00C094F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE58FF1721D9B88D00C094F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE58FF1821D9B88D00C094F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE58FF1A21D9B88D00C094F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				INFOPLIST_FILE = OpenPass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = martin.OpenPass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE58FF1B21D9B88D00C094F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				INFOPLIST_FILE = OpenPass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = martin.OpenPass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE58FF1D21D9B88D00C094F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				INFOPLIST_FILE = OpenPassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = martin.OpenPassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenPass.app/OpenPass";
+			};
+			name = Debug;
+		};
+		AE58FF1E21D9B88D00C094F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				INFOPLIST_FILE = OpenPassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = martin.OpenPassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenPass.app/OpenPass";
+			};
+			name = Release;
+		};
+		AE58FF2021D9B88D00C094F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				INFOPLIST_FILE = OpenPassUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = martin.OpenPassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenPass;
+			};
+			name = Debug;
+		};
+		AE58FF2121D9B88D00C094F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				INFOPLIST_FILE = OpenPassUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = martin.OpenPassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenPass;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE58FEE921D9B88900C094F1 /* Build configuration list for PBXProject "OpenPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE58FF1721D9B88D00C094F1 /* Debug */,
+				AE58FF1821D9B88D00C094F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE58FF1921D9B88D00C094F1 /* Build configuration list for PBXNativeTarget "OpenPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE58FF1A21D9B88D00C094F1 /* Debug */,
+				AE58FF1B21D9B88D00C094F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE58FF1C21D9B88D00C094F1 /* Build configuration list for PBXNativeTarget "OpenPassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE58FF1D21D9B88D00C094F1 /* Debug */,
+				AE58FF1E21D9B88D00C094F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE58FF1F21D9B88D00C094F1 /* Build configuration list for PBXNativeTarget "OpenPassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE58FF2021D9B88D00C094F1 /* Debug */,
+				AE58FF2121D9B88D00C094F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE58FEF821D9B88A00C094F1 /* OpenPass.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE58FEF921D9B88A00C094F1 /* OpenPass.xcdatamodel */,
+			);
+			currentVersion = AE58FEF921D9B88A00C094F1 /* OpenPass.xcdatamodel */;
+			path = OpenPass.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AE58FEE621D9B88900C094F1 /* Project object */;
+}
