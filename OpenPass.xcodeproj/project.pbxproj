@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE586E9E21D9D2260066BC0E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9D21D9D2260066BC0E /* HomeViewController.swift */; };
+		AE586EA021D9D2590066BC0E /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9F21D9D2590066BC0E /* AccountsViewController.swift */; };
+		AE586EA221D9D7330066BC0E /* SingleAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586EA121D9D7330066BC0E /* SingleAccountViewController.swift */; };
 		AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */; };
-		AE58FEF421D9B88A00C094F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF321D9B88A00C094F1 /* ViewController.swift */; };
 		AE58FEF721D9B88A00C094F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEF521D9B88A00C094F1 /* Main.storyboard */; };
 		AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF821D9B88A00C094F1 /* OpenPass.xcdatamodeld */; };
 		AE58FEFC21D9B88D00C094F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */; };
@@ -35,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE586E9D21D9D2260066BC0E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AE586E9F21D9D2590066BC0E /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		AE586EA121D9D7330066BC0E /* SingleAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAccountViewController.swift; sourceTree = "<group>"; };
 		AE58FEEE21D9B88A00C094F1 /* OpenPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE58FEF321D9B88A00C094F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE58FEF621D9B88A00C094F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE58FEF921D9B88A00C094F1 /* OpenPass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenPass.xcdatamodel; sourceTree = "<group>"; };
 		AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */,
-				AE58FEF321D9B88A00C094F1 /* ViewController.swift */,
+				AE58FF2421D9BA1100C094F1 /* Classes and Structs */,
+				AE58FF2321D9BA0900C094F1 /* Data Management */,
+				AE58FF2221D9B9FF00C094F1 /* View Controllers */,
 				AE58FEF521D9B88A00C094F1 /* Main.storyboard */,
 				AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */,
 				AE58FEFD21D9B88D00C094F1 /* LaunchScreen.storyboard */,
@@ -126,6 +132,30 @@
 				AE58FF1621D9B88D00C094F1 /* Info.plist */,
 			);
 			path = OpenPassUITests;
+			sourceTree = "<group>";
+		};
+		AE58FF2221D9B9FF00C094F1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE586E9D21D9D2260066BC0E /* HomeViewController.swift */,
+				AE586E9F21D9D2590066BC0E /* AccountsViewController.swift */,
+				AE586EA121D9D7330066BC0E /* SingleAccountViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AE58FF2321D9BA0900C094F1 /* Data Management */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Management";
+			sourceTree = "<group>";
+		};
+		AE58FF2421D9BA1100C094F1 /* Classes and Structs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Classes and Structs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE58FEF421D9B88A00C094F1 /* ViewController.swift in Sources */,
 				AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */,
+				AE586EA221D9D7330066BC0E /* SingleAccountViewController.swift in Sources */,
 				AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */,
+				AE586EA021D9D2590066BC0E /* AccountsViewController.swift in Sources */,
+				AE586E9E21D9D2260066BC0E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
