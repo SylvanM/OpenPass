@@ -17,7 +17,41 @@
                     <view key="view" contentMode="scaleToFill" id="CWq-tS-Fc6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OpenPass Requires Authentication" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBv-aT-ZpY">
+                                <rect key="frame" x="16" y="94" width="343" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="5YP-mN-76S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To ensure the authenticity of the user, OpenPass requires your passcode or Touch ID" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eod-ej-v9M">
+                                <rect key="frame" x="31" y="226" width="313" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OY3-Gi-coY">
+                                <rect key="frame" x="143.5" y="295" width="88" height="30"/>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="userWantsToAuthenticate:" destination="jVt-ah-DCT" eventType="touchUpInside" id="CoK-ep-TdC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OY3-Gi-coY" firstAttribute="centerX" secondItem="CWq-tS-Fc6" secondAttribute="centerX" id="3Ch-yn-3a2"/>
+                            <constraint firstItem="Gpa-lZ-T0d" firstAttribute="trailing" secondItem="wBv-aT-ZpY" secondAttribute="trailing" constant="16" id="Hhl-bn-c6o"/>
+                            <constraint firstItem="Gpa-lZ-T0d" firstAttribute="trailing" secondItem="eod-ej-v9M" secondAttribute="trailing" constant="31" id="J5d-ON-jaH"/>
+                            <constraint firstItem="wBv-aT-ZpY" firstAttribute="leading" secondItem="Gpa-lZ-T0d" secondAttribute="leading" constant="16" id="Ku5-RA-0rQ"/>
+                            <constraint firstItem="wBv-aT-ZpY" firstAttribute="top" secondItem="Gpa-lZ-T0d" secondAttribute="top" constant="74" id="Wzr-eq-OQg"/>
+                            <constraint firstItem="eod-ej-v9M" firstAttribute="leading" secondItem="Gpa-lZ-T0d" secondAttribute="leading" constant="31" id="eOu-2L-Lej"/>
+                            <constraint firstItem="eod-ej-v9M" firstAttribute="top" secondItem="wBv-aT-ZpY" secondAttribute="bottom" constant="8" id="epd-3F-j65"/>
+                            <constraint firstItem="OY3-Gi-coY" firstAttribute="top" secondItem="eod-ej-v9M" secondAttribute="bottom" constant="8" id="pV5-V8-d2j"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gpa-lZ-T0d"/>
                     </view>
                     <connections>
@@ -26,12 +60,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iea-Ff-7if" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79" y="134"/>
+            <point key="canvasLocation" x="77.599999999999994" y="133.5832083958021"/>
         </scene>
         <!--Passwords-->
         <scene sceneID="WfV-ol-fTR">
             <objects>
-                <tableViewController id="jVi-lG-0sJ" customClass="AccountsViewController" customModule="OpenPass" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="jVi-lG-0sJ" customClass="PasswordsViewController" customModule="OpenPass" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yng-Yd-b8r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,6 +103,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Passwords" id="fXw-AC-QBc">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="nEU-DO-9Yo">
+                            <connections>
+                                <action selector="addPassword:" destination="jVi-lG-0sJ" id="Dzm-Mt-pcY"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="Ui6-d6-fon">
                             <connections>
                                 <segue destination="sVT-cT-VBf" kind="show" id="OaV-cQ-f1I"/>
@@ -78,7 +117,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6n-ui-7xr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1758" y="134"/>
+            <point key="canvasLocation" x="878" y="928"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="enY-WG-XEb">
@@ -97,24 +136,36 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNZ-UU-53u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2996" y="-306.29685157421289"/>
+            <point key="canvasLocation" x="1670" y="928"/>
         </scene>
-        <!--Single Account View Controller-->
+        <!--Account View Controller-->
         <scene sceneID="Zfo-8T-g9Y">
             <objects>
-                <tableViewController id="s5L-Na-rHc" customClass="SingleAccountViewController" customModule="OpenPass" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="s5L-Na-rHc" customClass="AccountViewController" customModule="OpenPass" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WEt-wd-VjC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jbQ-xQ-ZTV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="passwordCell" id="jbQ-xQ-ZTV" customClass="PasswordCell" customModule="OpenPass" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jbQ-xQ-ZTV" id="PYg-lP-VaV">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjf-bi-PmU">
+                                            <rect key="frame" x="16" y="11" width="343" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="sjf-bi-PmU" id="hxi-Bu-pcW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -125,7 +176,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WqP-3q-2iX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2996" y="595"/>
+            <point key="canvasLocation" x="77.599999999999994" y="927.88605697151434"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zQr-6I-xzX">

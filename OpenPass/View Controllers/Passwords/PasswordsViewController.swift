@@ -1,5 +1,5 @@
 //
-//  SingleAccountViewController.swift
+//  AccountsViewController.swift
 //  OpenPass
 //
 //  Created by Sylvan Martin on 12/30/18.
@@ -8,39 +8,71 @@
 
 import UIKit
 
-class SingleAccountViewController: UITableViewController {
+class PasswordsViewController: UITableViewController {
+    
+    var passwordList: [String]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.register(PasswordCell.self, forCellReuseIdentifier: "passwordCell")
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        passwordList = [
+            "password1",
+            "password2"
+        ]
+    }
+    
+    // MARK: Actions
+    
+    @IBAction func addPassword(_ sender: Any) {
+        
+    }
+    
+    // MARK: Storyboard
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openAccount" {
+            let vc = segue.destination as! AccountViewController
+            
+            if let selectedCell = tableView.cellForRow(at: sender as! IndexPath) as? PasswordCell {
+                vc.account.name = selectedCell.name.text
+            }
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return passwordList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "openAccount", sender: indexPath)
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "passwordCell", for: indexPath) as! PasswordCell
+        
+        cell.name.text = passwordList[indexPath.row]
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

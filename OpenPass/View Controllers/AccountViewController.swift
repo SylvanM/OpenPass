@@ -1,5 +1,5 @@
 //
-//  AccountsViewController.swift
+//  SingleAccountViewController.swift
 //  OpenPass
 //
 //  Created by Sylvan Martin on 12/30/18.
@@ -8,16 +8,23 @@
 
 import UIKit
 
-class AccountsViewController: UITableViewController {
+class AccountViewController: UITableViewController {
+    
+    // MARK: Properties
+    var account: Account!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.title = account.name
     }
 
     // MARK: - Table view data source
@@ -30,10 +37,6 @@ class AccountsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
     }
 
     /*

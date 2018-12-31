@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */; };
-		AE586EA021D9D2590066BC0E /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9F21D9D2590066BC0E /* AccountsViewController.swift */; };
-		AE586EA221D9D7330066BC0E /* SingleAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586EA121D9D7330066BC0E /* SingleAccountViewController.swift */; };
+		AE586EA021D9D2590066BC0E /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */; };
+		AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586EA121D9D7330066BC0E /* AccountViewController.swift */; };
 		AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */; };
 		AE58FEF721D9B88A00C094F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEF521D9B88A00C094F1 /* Main.storyboard */; };
 		AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF821D9B88A00C094F1 /* OpenPass.xcdatamodeld */; };
@@ -18,6 +18,10 @@
 		AE58FF0A21D9B88D00C094F1 /* OpenPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */; };
 		AE58FF1521D9B88D00C094F1 /* OpenPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */; };
 		AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */; };
+		AED3FF5321DA9A2D00D7C042 /* Authentication+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */; };
+		AED3FF5621DA9CC300D7C042 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5421DA9CC300D7C042 /* Account+CoreDataClass.swift */; };
+		AED3FF5721DA9CC300D7C042 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5521DA9CC300D7C042 /* Account+CoreDataProperties.swift */; };
+		AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,8 @@
 
 /* Begin PBXFileReference section */
 		AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
-		AE586E9F21D9D2590066BC0E /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
-		AE586EA121D9D7330066BC0E /* SingleAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAccountViewController.swift; sourceTree = "<group>"; };
+		AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
+		AE586EA121D9D7330066BC0E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		AE58FEEE21D9B88A00C094F1 /* OpenPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE58FEF621D9B88A00C094F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +59,10 @@
 		AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPassUITests.swift; sourceTree = "<group>"; };
 		AE58FF1621D9B88D00C094F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Authentication+Process.swift"; sourceTree = "<group>"; };
+		AED3FF5421DA9CC300D7C042 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AED3FF5521DA9CC300D7C042 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,10 +147,10 @@
 		AE58FF2221D9B9FF00C094F1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AED3FF5821DA9F4100D7C042 /* Passwords */,
 				AED3FF4F21DA8BCE00D7C042 /* Settings */,
 				AED3FF4B21DA839A00D7C042 /* Authentication */,
-				AE586E9F21D9D2590066BC0E /* AccountsViewController.swift */,
-				AE586EA121D9D7330066BC0E /* SingleAccountViewController.swift */,
+				AE586EA121D9D7330066BC0E /* AccountViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -150,6 +158,8 @@
 		AE58FF2321D9BA0900C094F1 /* Data Management */ = {
 			isa = PBXGroup;
 			children = (
+				AED3FF5421DA9CC300D7C042 /* Account+CoreDataClass.swift */,
+				AED3FF5521DA9CC300D7C042 /* Account+CoreDataProperties.swift */,
 			);
 			path = "Data Management";
 			sourceTree = "<group>";
@@ -165,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */,
+				AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -175,6 +186,15 @@
 				AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		AED3FF5821DA9F4100D7C042 /* Passwords */ = {
+			isa = PBXGroup;
+			children = (
+				AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */,
+				AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */,
+			);
+			path = Passwords;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,11 +329,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */,
-				AE586EA221D9D7330066BC0E /* SingleAccountViewController.swift in Sources */,
+				AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */,
 				AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */,
 				AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */,
-				AE586EA021D9D2590066BC0E /* AccountsViewController.swift in Sources */,
+				AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */,
+				AE586EA021D9D2590066BC0E /* PasswordsViewController.swift in Sources */,
+				AED3FF5321DA9A2D00D7C042 /* Authentication+Process.swift in Sources */,
+				AED3FF5721DA9CC300D7C042 /* Account+CoreDataProperties.swift in Sources */,
 				AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */,
+				AED3FF5621DA9CC300D7C042 /* Account+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
