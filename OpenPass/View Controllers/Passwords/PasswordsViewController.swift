@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
 class PasswordsViewController: UITableViewController {
     
-    var passwordList: [String]!
+    let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    let helper = CDHelper()
+    
+    var passwordList: [String] {
+        return helper.fetchNames()!
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,16 +30,52 @@ class PasswordsViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        passwordList = [
-            "password1",
-            "password2"
-        ]
+        // reload table view
+        tableView.reloadData()
     }
     
     // MARK: Actions
     
     @IBAction func addPassword(_ sender: Any) {
+        let alertController = UIAlertController(title: "Name the account", message: "i.e. \"Email\" or \"School Login\"", preferredStyle: .alert)
         
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Account name"
+        }
+        
+        let addAction = UIAlertAction(title: "Add", style: .default) { (_) in
+            if let name = alertController.textFields?[0].text {
+                
+                // save new object
+                let accountDescription = NSEntityDescription.entity(forEntityName: "Account", in: self.managedContext)
+                let newAccount = NSManagedObject(entity: accountDescription!, insertInto: self.managedContext) as! Account
+                
+                newAccount.setValue(name, forKey: "name")
+                
+                // also generate a new key
+                let keyHelper = KeyHelper()
+                var tagString = "com.OpenPass.keys." + name + "key"
+                let tag = tagString.data(using: .utf8)!
+                let key = keyHelper.generateKey(for: tag)!
+
+                // save key
+                let keychain = KeychainHelper()
+                print("Saving: ", key)
+                print("For tag: ", String(data: tag, encoding: .utf8)!)
+                keychain.saveKey(key, for: tag)
+                
+                self.tableView.reloadData()
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(addAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true) {
+            // user made the account
+        }
     }
     
     // MARK: Storyboard
@@ -60,8 +102,12 @@ class PasswordsViewController: UITableViewController {
         return passwordList.count
     }
     
+    // MARK: Table view actions
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "openAccount", sender: indexPath)
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.setSelected(false, animated: true)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,7 +117,6 @@ class PasswordsViewController: UITableViewController {
         
         return cell
     }
- 
 
     /*
     // Override to support conditional editing of the table view.
