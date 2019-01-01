@@ -32,11 +32,5 @@ class SettingsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
-    
-    func clearMarkFromAllCells(in section: Int) {
-        for i in 0..<tableView.numberOfRows(inSection: section) {
-            tableView.cellForRow(at: IndexPath(row: i, section: section))?.accessoryType = .none
-        }
-    }
 
 }
