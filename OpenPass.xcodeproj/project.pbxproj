@@ -17,10 +17,16 @@
 		AE58FEFF21D9B88D00C094F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEFD21D9B88D00C094F1 /* LaunchScreen.storyboard */; };
 		AE58FF0A21D9B88D00C094F1 /* OpenPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */; };
 		AE58FF1521D9B88D00C094F1 /* OpenPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */; };
+		AE7843B221DBD4CE00B45FFF /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843B121DBD4CE00B45FFF /* CDHelper.swift */; };
+		AE7843B921DBDD8F00B45FFF /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843B821DBDD8F00B45FFF /* DataDecoder.swift */; };
+		AE7843BB21DBDED200B45FFF /* DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843BA21DBDED200B45FFF /* DataEncoder.swift */; };
+		AE81464821DBF17A00F06C96 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464721DBF17A00F06C96 /* KeychainHelper.swift */; };
+		AE81464A21DBF1EF00F06C96 /* KeyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464921DBF1EF00F06C96 /* KeyHelper.swift */; };
+		AE81464C21DBF33700F06C96 /* Data+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464B21DBF33700F06C96 /* Data+Encryption.swift */; };
+		AE81465421DC11B800F06C96 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81465221DC11B800F06C96 /* Account+CoreDataClass.swift */; };
+		AE81465521DC11B800F06C96 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81465321DC11B800F06C96 /* Account+CoreDataProperties.swift */; };
 		AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */; };
 		AED3FF5321DA9A2D00D7C042 /* Authentication+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */; };
-		AED3FF5621DA9CC300D7C042 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5421DA9CC300D7C042 /* Account+CoreDataClass.swift */; };
-		AED3FF5721DA9CC300D7C042 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5521DA9CC300D7C042 /* Account+CoreDataProperties.swift */; };
 		AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,10 +64,17 @@
 		AE58FF1021D9B88D00C094F1 /* OpenPassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPassUITests.swift; sourceTree = "<group>"; };
 		AE58FF1621D9B88D00C094F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE7843B121DBD4CE00B45FFF /* CDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
+		AE7843B821DBDD8F00B45FFF /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
+		AE7843BA21DBDED200B45FFF /* DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoder.swift; sourceTree = "<group>"; };
+		AE81464721DBF17A00F06C96 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		AE81464921DBF1EF00F06C96 /* KeyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyHelper.swift; sourceTree = "<group>"; };
+		AE81464B21DBF33700F06C96 /* Data+Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Encryption.swift"; sourceTree = "<group>"; };
+		AE81464D21DC0CB700F06C96 /* OpenPass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenPass.entitlements; sourceTree = "<group>"; };
+		AE81465221DC11B800F06C96 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AE81465321DC11B800F06C96 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Authentication+Process.swift"; sourceTree = "<group>"; };
-		AED3FF5421DA9CC300D7C042 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AED3FF5521DA9CC300D7C042 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +126,9 @@
 		AE58FEF021D9B88A00C094F1 /* OpenPass */ = {
 			isa = PBXGroup;
 			children = (
+				AE81464D21DC0CB700F06C96 /* OpenPass.entitlements */,
 				AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */,
+				AE81464521DBF16300F06C96 /* Encryption and Decryption */,
 				AE58FF2421D9BA1100C094F1 /* Classes and Structs */,
 				AE58FF2321D9BA0900C094F1 /* Data Management */,
 				AE58FF2221D9B9FF00C094F1 /* View Controllers */,
@@ -158,8 +173,10 @@
 		AE58FF2321D9BA0900C094F1 /* Data Management */ = {
 			isa = PBXGroup;
 			children = (
-				AED3FF5421DA9CC300D7C042 /* Account+CoreDataClass.swift */,
-				AED3FF5521DA9CC300D7C042 /* Account+CoreDataProperties.swift */,
+				AE81465221DC11B800F06C96 /* Account+CoreDataClass.swift */,
+				AE81465321DC11B800F06C96 /* Account+CoreDataProperties.swift */,
+				AE7843B721DBDD6D00B45FFF /* Encryption */,
+				AE7843A321DAD4E000B45FFF /* Core Data Helper */,
 			);
 			path = "Data Management";
 			sourceTree = "<group>";
@@ -169,6 +186,41 @@
 			children = (
 			);
 			path = "Classes and Structs";
+			sourceTree = "<group>";
+		};
+		AE7843A321DAD4E000B45FFF /* Core Data Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AE7843B121DBD4CE00B45FFF /* CDHelper.swift */,
+			);
+			path = "Core Data Helper";
+			sourceTree = "<group>";
+		};
+		AE7843B721DBDD6D00B45FFF /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				AE7843B821DBDD8F00B45FFF /* DataDecoder.swift */,
+				AE7843BA21DBDED200B45FFF /* DataEncoder.swift */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
+		AE81464521DBF16300F06C96 /* Encryption and Decryption */ = {
+			isa = PBXGroup;
+			children = (
+				AE81464B21DBF33700F06C96 /* Data+Encryption.swift */,
+				AE81464621DBF16C00F06C96 /* Keys */,
+			);
+			path = "Encryption and Decryption";
+			sourceTree = "<group>";
+		};
+		AE81464621DBF16C00F06C96 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				AE81464721DBF17A00F06C96 /* KeychainHelper.swift */,
+				AE81464921DBF1EF00F06C96 /* KeyHelper.swift */,
+			);
+			path = Keys;
 			sourceTree = "<group>";
 		};
 		AED3FF4B21DA839A00D7C042 /* Authentication */ = {
@@ -221,6 +273,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE58FF1C21D9B88D00C094F1 /* Build configuration list for PBXNativeTarget "OpenPassTests" */;
 			buildPhases = (
+				1A6D1DEA6C3184C5D8694C08 /* [CP] Check Pods Manifest.lock */,
 				AE58FF0121D9B88D00C094F1 /* Sources */,
 				AE58FF0221D9B88D00C094F1 /* Frameworks */,
 				AE58FF0321D9B88D00C094F1 /* Resources */,
@@ -239,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE58FF1F21D9B88D00C094F1 /* Build configuration list for PBXNativeTarget "OpenPassUITests" */;
 			buildPhases = (
+				A3A0BB6F29A04FC111E544F1 /* [CP] Check Pods Manifest.lock */,
 				AE58FF0C21D9B88D00C094F1 /* Sources */,
 				AE58FF0D21D9B88D00C094F1 /* Frameworks */,
 				AE58FF0E21D9B88D00C094F1 /* Resources */,
@@ -265,6 +319,14 @@
 				TargetAttributes = {
 					AE58FEED21D9B88A00C094F1 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					AE58FF0421D9B88D00C094F1 = {
 						CreatedOnToolsVersion = 10.1;
@@ -323,21 +385,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A6D1DEA6C3184C5D8694C08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenPassTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A0BB6F29A04FC111E544F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenPassUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE58FEEA21D9B88A00C094F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE81464C21DBF33700F06C96 /* Data+Encryption.swift in Sources */,
+				AE81465421DC11B800F06C96 /* Account+CoreDataClass.swift in Sources */,
 				AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */,
 				AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */,
 				AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */,
 				AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */,
+				AE81465521DC11B800F06C96 /* Account+CoreDataProperties.swift in Sources */,
 				AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */,
+				AE7843B221DBD4CE00B45FFF /* CDHelper.swift in Sources */,
+				AE7843B921DBDD8F00B45FFF /* DataDecoder.swift in Sources */,
 				AE586EA021D9D2590066BC0E /* PasswordsViewController.swift in Sources */,
 				AED3FF5321DA9A2D00D7C042 /* Authentication+Process.swift in Sources */,
-				AED3FF5721DA9CC300D7C042 /* Account+CoreDataProperties.swift in Sources */,
+				AE81464A21DBF1EF00F06C96 /* KeyHelper.swift in Sources */,
+				AE81464821DBF17A00F06C96 /* KeychainHelper.swift in Sources */,
+				AE7843BB21DBDED200B45FFF /* DataEncoder.swift in Sources */,
 				AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */,
-				AED3FF5621DA9CC300D7C042 /* Account+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +627,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenPass/OpenPass.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JDSTZ7K2MV;
 				INFOPLIST_FILE = OpenPass/Info.plist;
@@ -530,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenPass/OpenPass.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JDSTZ7K2MV;
 				INFOPLIST_FILE = OpenPass/Info.plist;
