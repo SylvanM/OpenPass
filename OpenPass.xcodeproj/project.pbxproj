@@ -129,7 +129,6 @@
 				AE81464D21DC0CB700F06C96 /* OpenPass.entitlements */,
 				AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */,
 				AE81464521DBF16300F06C96 /* Encryption and Decryption */,
-				AE58FF2421D9BA1100C094F1 /* Classes and Structs */,
 				AE58FF2321D9BA0900C094F1 /* Data Management */,
 				AE58FF2221D9B9FF00C094F1 /* View Controllers */,
 				AE58FEF521D9B88A00C094F1 /* Main.storyboard */,
@@ -179,13 +178,6 @@
 				AE7843A321DAD4E000B45FFF /* Core Data Helper */,
 			);
 			path = "Data Management";
-			sourceTree = "<group>";
-		};
-		AE58FF2421D9BA1100C094F1 /* Classes and Structs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Classes and Structs";
 			sourceTree = "<group>";
 		};
 		AE7843A321DAD4E000B45FFF /* Core Data Helper */ = {
