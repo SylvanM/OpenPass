@@ -44,12 +44,14 @@ struct KeychainHelper {
     }
     
     func delete(_ keyTag: Data) {
-        let query: [String: Any] = [kSecClass as String: kSecClassKey,
-                                    kSecAttrApplicationTag as String: keyTag,
-                                    kSecValueRef as String: getKey(for: keyTag)!]
-        
-        let status = SecItemDelete(query as CFDictionary)
-        guard status == errSecSuccess || status == errSecItemNotFound else { print("Could not delete"); return }
+        if let key = getKey(for: keyTag) {
+            let query: [String: Any] = [kSecClass as String: kSecClassKey,
+                                        kSecAttrApplicationTag as String: keyTag,
+                                        kSecValueRef as String: key]
+            
+            let status = SecItemDelete(query as CFDictionary)
+            guard status == errSecSuccess || status == errSecItemNotFound else { print("Could not delete"); return }
+        }
     }
     
     enum KeychainError: Error {
