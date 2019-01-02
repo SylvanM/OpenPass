@@ -33,6 +33,10 @@ class AuthenticationViewController: UIViewController {
         beginAuthenticationProcess()
     }
     
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
+        
+    }
+    
 
     /*
     // MARK: - Navigation

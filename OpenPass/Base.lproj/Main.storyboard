@@ -112,9 +112,11 @@
                     <connections>
                         <outlet property="searchDisplayController" destination="CHE-MU-vfh" id="rfm-5d-NRj"/>
                         <segue destination="s5L-Na-rHc" kind="show" identifier="openAccount" id="cSV-zA-a3G"/>
+                        <segue destination="F14-xA-DbX" kind="unwind" identifier="unwindToAuthorization" unwindAction="prepareForUnwindWithSegue:" id="VDk-uc-UKa"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6n-ui-7xr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="F14-xA-DbX" userLabel="Exit" sceneMemberID="exit"/>
                 <searchDisplayController id="CHE-MU-vfh">
                     <connections>
                         <outlet property="delegate" destination="jVi-lG-0sJ" id="crJ-KF-veC"/>

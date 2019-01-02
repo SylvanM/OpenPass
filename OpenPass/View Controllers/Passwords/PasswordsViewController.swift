@@ -21,12 +21,19 @@ class PasswordsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    @objc func appMovedToBackground() {
+        // go back to the authorization view
+        performSegue(withIdentifier: "unwindToAuthorization", sender: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
