@@ -22,7 +22,7 @@ class PasswordsViewController: UITableViewController {
         super.viewDidLoad()
         
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(appReopened), name: UIApplication.willEnterForegroundNotification, object: nil)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -31,7 +31,7 @@ class PasswordsViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    @objc func appMovedToBackground() {
+    @objc func appReopened() {
         // go back to the authorization view
         performSegue(withIdentifier: "unwindToAuthorization", sender: self)
     }
@@ -44,7 +44,7 @@ class PasswordsViewController: UITableViewController {
     // MARK: Actions
     
     @IBAction func addPassword(_ sender: Any) {
-        let alertController = UIAlertController(title: "Name the account", message: "i.e. \"Email\" or \"School Login\"", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Name the account", message: "e.g. \"Email\" or \"School Login\"", preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
             textField.placeholder = "Account name"
