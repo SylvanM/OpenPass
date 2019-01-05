@@ -191,17 +191,27 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MHm-P4-2c6">
-                                                    <rect key="frame" x="16" y="7" width="343" height="30"/>
+                                                    <rect key="frame" x="16" y="7" width="290" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                     <connections>
                                                         <action selector="passwordEditingDidEnd:" destination="s5L-Na-rHc" eventType="editingDidEnd" id="bGU-bC-tue"/>
                                                         <action selector="passwordPrimaryActionTriggered:" destination="s5L-Na-rHc" eventType="primaryActionTriggered" id="mU1-az-RxK"/>
                                                     </connections>
                                                 </textField>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTD-xV-kqF">
+                                                    <rect key="frame" x="314" y="6.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="userToggledSecureTextEntry:" destination="s5L-Na-rHc" eventType="valueChanged" id="LJp-yF-ada"/>
+                                                    </connections>
+                                                </switch>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="KTD-xV-kqF" secondAttribute="trailing" constant="12" id="2KR-iN-pwz"/>
+                                                <constraint firstItem="KTD-xV-kqF" firstAttribute="centerY" secondItem="c9B-q5-8UC" secondAttribute="centerY" id="fJh-XN-4bz"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -233,35 +243,8 @@
                             </tableViewSection>
                             <tableViewSection id="NnR-Ow-mhI">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="t8D-wo-euG">
-                                        <rect key="frame" x="0.0" y="335.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t8D-wo-euG" id="ZBj-eu-Um9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Encrypt 🔐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9e-fI-4SZ">
-                                                    <rect key="frame" x="16" y="11" width="292" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4k-Sd-mYa">
-                                                    <rect key="frame" x="314" y="6.5" width="51" height="31"/>
-                                                    <connections>
-                                                        <action selector="switchWasToggled:" destination="s5L-Na-rHc" eventType="valueChanged" id="4cS-la-sP9"/>
-                                                    </connections>
-                                                </switch>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="O4k-Sd-mYa" firstAttribute="centerY" secondItem="ZBj-eu-Um9" secondAttribute="centerY" id="Ryx-sq-aWc"/>
-                                                <constraint firstAttribute="trailing" secondItem="O4k-Sd-mYa" secondAttribute="trailing" constant="12" id="vSt-M5-r7S"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DO0-e8-92m">
-                                        <rect key="frame" x="0.0" y="379.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="335.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DO0-e8-92m" id="Gt9-yK-xw2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -294,7 +277,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="izl-56-4Wp" id="jBn-hr-Vk9"/>
                         <outlet property="passwordTextField" destination="MHm-P4-2c6" id="aMM-Zo-lCf"/>
-                        <outlet property="shouldEncryptSwitch" destination="O4k-Sd-mYa" id="TNL-VN-iov"/>
+                        <outlet property="shouldHaveSecureTextEntrySwitch" destination="KTD-xV-kqF" id="D7E-L0-3se"/>
                         <outlet property="usernameTextField" destination="HxX-al-k4C" id="QKl-rz-L7R"/>
                     </connections>
                 </tableViewController>

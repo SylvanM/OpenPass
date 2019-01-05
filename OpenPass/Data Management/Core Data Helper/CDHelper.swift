@@ -22,7 +22,8 @@ struct CDHelper {
             previouslySaved.setValue(account.username, forKey: "username")
             previouslySaved.setValue(account.password, forKey: "password")
             previouslySaved.setValue(account.email, forKey: "email")
-            previouslySaved.setValue(account.shouldEncrypt, forKey: "shouldEncrypt")
+            previouslySaved.setValue(account.group, forKey: "group")
+            previouslySaved.setValue(account.extraData, forKey: "extraData")
             
             do {
                 try managedContext.save()
@@ -37,7 +38,8 @@ struct CDHelper {
             newAccount.setValue(account.username, forKey: "username")
             newAccount.setValue(account.password, forKey: "password")
             newAccount.setValue(account.email, forKey: "email")
-            newAccount.setValue(account.shouldEncrypt, forKey: "shouldEncrypt")
+            newAccount.setValue(account.group, forKey: "group")
+            newAccount.setValue(account.extraData, forKey: "extraData")
             
             do {
                 try managedContext.save()
@@ -47,6 +49,29 @@ struct CDHelper {
         }
         
         
+        
+    }
+    
+    // change name of thing
+    func changeName(of originalName: String, to newName: String) {
+        
+        // get original object
+        if let account = fetch(originalName) {
+            
+            // change actual name
+            account.setValue(newName, forKey: "name")
+            
+            // but that's not all. We also must update the key names.
+            let keychain = KeychainHelper()
+            let originalTag = ("com.OpenPass.keys." + originalName + "key").data(using: .utf8)!
+            let newTag = ("com.OpenPass.keys." + newName + "key").data(using: .utf8)!
+            
+            keychain.changeTag(of: originalTag, to: newTag)
+            save(account)
+            
+        }
+        
+        // if the condition above is not met, then the original object doesn't exist anyway.
         
     }
     
@@ -60,10 +85,10 @@ struct CDHelper {
     // retrieves ALL saved accounts
     func fetch() -> [Account]? {
         
-        let accountFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Account")
+        let accountFetch = Account.accountFetchRequest()
         
         do {
-            let accounts = try managedContext.fetch(accountFetch) as! [Account]
+            let accounts = try managedContext.fetch(accountFetch)
             return accounts
         } catch {
             print("Error on fetching: ", error)
@@ -76,12 +101,12 @@ struct CDHelper {
     // retrieves specific Account with a specific name
     func fetch(_ name: String) -> Account? {
         
-        let accountFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Account")
+        let accountFetch = Account.accountFetchRequest()
         accountFetch.fetchLimit = 1
         accountFetch.predicate = NSPredicate(format: "name = %@", name)
         
         do {
-            let accounts = try managedContext.fetch(accountFetch) as! [Account]
+            let accounts = try managedContext.fetch(accountFetch)
             let retrievedAccount = accounts.first
             return retrievedAccount
         } catch {
@@ -95,7 +120,7 @@ struct CDHelper {
     // retrieves all account names
     func fetchNames() -> [String]? {
         
-        let accountFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Account")
+        let accountFetch = Account.accountFetchRequest()
         accountFetch.sortDescriptors = [NSSortDescriptor.init(key: "name", ascending: true)]
         
         do {
@@ -115,5 +140,10 @@ struct CDHelper {
         
         return nil
     }
+    
+    // for GROUPS
+    
+    
+    
     
 }

@@ -1,5 +1,5 @@
 //
-//  Account+CoreDataClass.swift
+//  Group+CoreDataClass.swift
 //  OpenPass
 //
 //  Created by Sylvan Martin on 1/5/19.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-
-public class Account: NSManagedObject {
+@objc(Group)
+public class Group: NSManagedObject {
 
 }

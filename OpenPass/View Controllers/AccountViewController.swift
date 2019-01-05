@@ -33,23 +33,27 @@ class AccountViewController: UITableViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
+    // Switches
     @IBOutlet weak var shouldEncryptSwitch: UISwitch!
+    @IBOutlet weak var shouldHaveSecureTextEntrySwitch: UISwitch!
+    
+    // Labels
+    @IBOutlet weak var encryptionStatusField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.keyboardDismissMode = .interactive
 
-        shouldEncryptSwitch.setOn(self.account.shouldEncrypt, animated: false)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
-        
-        // add switch
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.editButtonItem.action = #selector(editName)
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,22 +62,10 @@ class AccountViewController: UITableViewController {
         let decoder = DataDecoder()
         
         // load text fields
-        if self.account.shouldEncrypt {
-            if let key = KeychainHelper().getKey(for: self.keyTag) {
-                self.usernameTextField.text = decoder.decode(encodedData: account.username, key: key)
-                self.passwordTextField.text = decoder.decode(encodedData: account.password, key: key)
-                self.emailTextField.text = decoder.decode(encodedData: account.email, key: key)
-            }
-        } else {
-            if let username = account.username {
-                self.usernameTextField.text = String(data: username as Data, encoding: .utf8)
-            }
-            if let password = account.password {
-                self.passwordTextField.text = String(data: password as Data, encoding: .utf8)
-            }
-            if let email = account.email {
-                self.emailTextField.text = String(data: email as Data, encoding: .utf8)
-            }
+        if let key = KeychainHelper().getKey(for: self.keyTag) {
+            self.usernameTextField.text = decoder.decode(encodedData: account.username, key: key)
+            self.passwordTextField.text = decoder.decode(encodedData: account.password, key: key)
+            self.emailTextField.text = decoder.decode(encodedData: account.email, key: key)
         }
     }
     
@@ -101,15 +93,52 @@ class AccountViewController: UITableViewController {
         view.endEditing(true)
     }
     
-    // Switch
-    @IBAction func switchWasToggled(_ sender: Any) {
-        self.account.shouldEncrypt = self.shouldEncryptSwitch.isOn
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    @objc
+    func editName() {
         
-        // resave
+        // create alert for user
+        let changeNamePrompt = UIAlertController(title: "Rename Account", message: nil, preferredStyle: .alert)
+        changeNamePrompt.addTextField { (textField) in
+            textField.placeholder = "New account name"
+        }
         
-        save(fromField: usernameTextField)
-        save(fromField: passwordTextField)
-        save(fromField: emailTextField)
+        let changeNameAction = UIAlertAction(title: "Change", style: .default) { _ in
+            
+            if let newName = changeNamePrompt.textFields?[0].text {
+                self.helper.changeName(of: self.account.name!, to: newName)
+                self.name = newName
+            }
+            
+            // reload view
+            self.viewWillAppear(true)
+            
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        changeNamePrompt.addAction(changeNameAction)
+        changeNamePrompt.addAction(cancelAction)
+        
+        self.present(changeNamePrompt, animated: true)
+    }
+    
+    // Toggle secure text entry
+    @IBAction func userToggledSecureTextEntry(_ sender: Any) {
+        self.passwordTextField.isSecureTextEntry = self.shouldHaveSecureTextEntrySwitch.isOn
     }
     
     // MARK: Table View
@@ -140,6 +169,10 @@ class AccountViewController: UITableViewController {
     
     // MARK: Methods
     
+    func reloadEncryptionStatusLabel() {
+        encryptionStatusField.text = shouldEncryptSwitch.isOn ? "🔐" : "🔓🔑"
+    }
+    
     func save(fromField textField: UITextField) {
         if let textToSave = textField.text {
             let encoder = DataEncoder()
@@ -160,14 +193,10 @@ class AccountViewController: UITableViewController {
                 print("something has gone horribly wrong")
             }
             
-            if self.account.shouldEncrypt {
-                let keychain = KeychainHelper()
-                let key = keychain.getKey(for: self.keyTag)!
-                
-                dataToSave = encoder.encode(string: textToSave, key: key)
-            } else {
-                dataToSave = textToSave.data(using: .utf8)! as NSData
-            }
+            let keychain = KeychainHelper()
+            let key = keychain.getKey(for: self.keyTag)!
+            
+            dataToSave = encoder.encode(string: textToSave, key: key)
             
             account.setValue(dataToSave, forKey: valueName)
             helper.save(account)
