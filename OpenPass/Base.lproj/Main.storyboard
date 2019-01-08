@@ -145,14 +145,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNZ-UU-53u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1969" y="1316"/>
+            <point key="canvasLocation" x="78" y="928"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="Zfo-8T-g9Y">
             <objects>
                 <tableViewController id="s5L-Na-rHc" customClass="AccountViewController" customModule="OpenPass" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="WEt-wd-VjC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -241,10 +241,36 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Other info" id="asB-fn-Jx8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="145" id="7rc-CN-j1i">
+                                        <rect key="frame" x="0.0" y="355.5" width="375" height="145"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7rc-CN-j1i" id="MNb-0i-Rgc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KAO-bq-S52">
+                                                    <rect key="frame" x="16" y="11" width="343" height="123"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KAO-bq-S52" firstAttribute="leading" secondItem="MNb-0i-Rgc" secondAttribute="leadingMargin" id="AF2-eE-WLq"/>
+                                                <constraint firstItem="KAO-bq-S52" firstAttribute="bottom" secondItem="MNb-0i-Rgc" secondAttribute="bottomMargin" id="cWQ-Yf-vmN"/>
+                                                <constraint firstItem="KAO-bq-S52" firstAttribute="trailing" secondItem="MNb-0i-Rgc" secondAttribute="trailingMargin" id="ym8-to-aEG"/>
+                                                <constraint firstItem="KAO-bq-S52" firstAttribute="top" secondItem="MNb-0i-Rgc" secondAttribute="topMargin" id="zES-d4-icS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection id="NnR-Ow-mhI">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DO0-e8-92m">
-                                        <rect key="frame" x="0.0" y="335.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="536.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DO0-e8-92m" id="Gt9-yK-xw2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -274,8 +300,10 @@
                             <outlet property="delegate" destination="s5L-Na-rHc" id="tCx-Wi-xSR"/>
                         </connections>
                     </tableView>
+                    <size key="freeformSize" width="375" height="800"/>
                     <connections>
                         <outlet property="emailTextField" destination="izl-56-4Wp" id="jBn-hr-Vk9"/>
+                        <outlet property="otherInfoField" destination="KAO-bq-S52" id="yPf-h9-bNC"/>
                         <outlet property="passwordTextField" destination="MHm-P4-2c6" id="aMM-Zo-lCf"/>
                         <outlet property="shouldHaveSecureTextEntrySwitch" destination="KTD-xV-kqF" id="D7E-L0-3se"/>
                         <outlet property="usernameTextField" destination="HxX-al-k4C" id="QKl-rz-L7R"/>
@@ -283,7 +311,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WqP-3q-2iX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1968.8" y="524.8875562218891"/>
+            <point key="canvasLocation" x="1968.8" y="524.43778110944527"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zQr-6I-xzX">
