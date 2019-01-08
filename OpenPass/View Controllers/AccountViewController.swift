@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AccountViewController: UITableViewController {
+class AccountViewController: UITableViewController, UITextViewDelegate {
     
     // MARK: Properties
     let moc    = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -25,23 +25,22 @@ class AccountViewController: UITableViewController {
         return helper.fetch(self.name)!
     }
     
-    // Section Constants
-    let deleteSection = 3
+    // Index Constants
+    let deleteIndex = IndexPath(row: 0, section: 4)
     
     // Text fields
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var otherInfoField: UITextView!
     
     // Switches
-    @IBOutlet weak var shouldEncryptSwitch: UISwitch!
     @IBOutlet weak var shouldHaveSecureTextEntrySwitch: UISwitch!
     
-    // Labels
-    @IBOutlet weak var encryptionStatusField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.otherInfoField.delegate = self
         
         tableView.keyboardDismissMode = .interactive
 
@@ -66,6 +65,7 @@ class AccountViewController: UITableViewController {
             self.usernameTextField.text = decoder.decode(encodedData: account.username, key: key)
             self.passwordTextField.text = decoder.decode(encodedData: account.password, key: key)
             self.emailTextField.text = decoder.decode(encodedData: account.email, key: key)
+            self.otherInfoField.text = decoder.decode(encodedData: account.extraData, key: key)
         }
     }
     
@@ -73,13 +73,13 @@ class AccountViewController: UITableViewController {
     
     // Editing endings
     @IBAction func usernameEditingDidEnd(_ sender: Any) {
-        save(fromField: sender as! UITextField)
+        save(fromField: sender as! UITextField, name: "username")
     }
     @IBAction func passwordEditingDidEnd(_ sender: Any) {
-        save(fromField: sender as! UITextField)
+        save(fromField: sender as! UITextField, name: "password")
     }
     @IBAction func emailEditingDidEnd(_ sender: Any) {
-        save(fromField: sender as! UITextField)
+        save(fromField: sender as! UITextField, name: "email")
     }
     
     // Primary actions
@@ -94,17 +94,17 @@ class AccountViewController: UITableViewController {
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height
-            }
-        }
+//        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+//            if self.view.frame.origin.y == 0 {
+//                self.view.frame.origin.y -= keyboardSize.height
+//            }
+//        }
     }
     
     @objc func keyboardWillHide(notification: NSNotification) {
-        if self.view.frame.origin.y != 0 {
-            self.view.frame.origin.y = 0
-        }
+//        if self.view.frame.origin.y != 0 {
+//            self.view.frame.origin.y = 0
+//        }
     }
     
     @objc
@@ -114,6 +114,7 @@ class AccountViewController: UITableViewController {
         let changeNamePrompt = UIAlertController(title: "Rename Account", message: nil, preferredStyle: .alert)
         changeNamePrompt.addTextField { (textField) in
             textField.placeholder = "New account name"
+            textField.text = self.account.name
         }
         
         let changeNameAction = UIAlertAction(title: "Change", style: .default) { _ in
@@ -141,10 +142,17 @@ class AccountViewController: UITableViewController {
         self.passwordTextField.isSecureTextEntry = self.shouldHaveSecureTextEntrySwitch.isOn
     }
     
+    // MARK: Text View
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        self.save(fromField: textView as TextHolder, name: "extraData")
+    }
+    
     // MARK: Table View
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == deleteSection, indexPath.row == 1, let cell = tableView.cellForRow(at: indexPath) {
+        print("Selected: ", indexPath.section, " ", indexPath.row)
+        if indexPath == deleteIndex, let cell = tableView.cellForRow(at: indexPath) {
             
             // is the user SURE they wanna delete it??
             
@@ -169,38 +177,18 @@ class AccountViewController: UITableViewController {
     
     // MARK: Methods
     
-    func reloadEncryptionStatusLabel() {
-        encryptionStatusField.text = shouldEncryptSwitch.isOn ? "🔐" : "🔓🔑"
-    }
-    
-    func save(fromField textField: UITextField) {
-        if let textToSave = textField.text {
+    func save(fromField textField: TextHolder, name: String) {
+        if let textToSave = textField.storedText {
             let encoder = DataEncoder()
-            
-            var valueName: String!
             var dataToSave: NSData
-            
-            // set the key
-            switch textField {
-            case usernameTextField:
-                valueName = "username"
-            case passwordTextField:
-                valueName = "password"
-            case emailTextField:
-                valueName = "email"
-            default:
-                // this code should never be called
-                print("something has gone horribly wrong")
-            }
             
             let keychain = KeychainHelper()
             let key = keychain.getKey(for: self.keyTag)!
             
             dataToSave = encoder.encode(string: textToSave, key: key)
             
-            account.setValue(dataToSave, forKey: valueName)
+            account.setValue(dataToSave, forKey: name)
             helper.save(account)
-            
         }
     }
     
