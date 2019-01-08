@@ -22,7 +22,6 @@ struct CDHelper {
             previouslySaved.setValue(account.username, forKey: "username")
             previouslySaved.setValue(account.password, forKey: "password")
             previouslySaved.setValue(account.email, forKey: "email")
-            previouslySaved.setValue(account.group, forKey: "group")
             previouslySaved.setValue(account.extraData, forKey: "extraData")
             
             do {
@@ -38,7 +37,6 @@ struct CDHelper {
             newAccount.setValue(account.username, forKey: "username")
             newAccount.setValue(account.password, forKey: "password")
             newAccount.setValue(account.email, forKey: "email")
-            newAccount.setValue(account.group, forKey: "group")
             newAccount.setValue(account.extraData, forKey: "extraData")
             
             do {
@@ -126,7 +124,7 @@ struct CDHelper {
         do {
             var names: [String] = []
             
-            let accounts = try managedContext.fetch(accountFetch) as! [Account]
+            let accounts = try managedContext.fetch(accountFetch)
             
             for i in 0..<accounts.count {
                 names.append(accounts[i].name!)
