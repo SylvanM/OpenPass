@@ -14,7 +14,6 @@
 		AE58FEF721D9B88A00C094F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEF521D9B88A00C094F1 /* Main.storyboard */; };
 		AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF821D9B88A00C094F1 /* OpenPass.xcdatamodeld */; };
 		AE58FEFC21D9B88D00C094F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */; };
-		AE58FEFF21D9B88D00C094F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEFD21D9B88D00C094F1 /* LaunchScreen.storyboard */; };
 		AE58FF0A21D9B88D00C094F1 /* OpenPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */; };
 		AE58FF1521D9B88D00C094F1 /* OpenPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */; };
 		AE7843B221DBD4CE00B45FFF /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843B121DBD4CE00B45FFF /* CDHelper.swift */; };
@@ -23,10 +22,12 @@
 		AE81464821DBF17A00F06C96 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464721DBF17A00F06C96 /* KeychainHelper.swift */; };
 		AE81464A21DBF1EF00F06C96 /* KeyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464921DBF1EF00F06C96 /* KeyHelper.swift */; };
 		AE81464C21DBF33700F06C96 /* Data+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464B21DBF33700F06C96 /* Data+Encryption.swift */; };
-		AEABE9F121E118F400A64132 /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE9ED21E118F400A64132 /* Group+CoreDataClass.swift */; };
-		AEABE9F221E118F400A64132 /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE9EE21E118F400A64132 /* Group+CoreDataProperties.swift */; };
-		AEABE9F321E118F400A64132 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE9EF21E118F400A64132 /* Account+CoreDataClass.swift */; };
-		AEABE9F421E118F400A64132 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE9F021E118F400A64132 /* Account+CoreDataProperties.swift */; };
+		AEC191F121E42B0500283478 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191EF21E42B0500283478 /* Account+CoreDataClass.swift */; };
+		AEC191F221E42B0500283478 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F021E42B0500283478 /* Account+CoreDataProperties.swift */; };
+		AEC191F521E42DB900283478 /* TextHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F421E42DB900283478 /* TextHolder.swift */; };
+		AEC191F721E42DDE00283478 /* UITextView+Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F621E42DDE00283478 /* UITextView+Holder.swift */; };
+		AEC191F921E42E3C00283478 /* UITextField+Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F821E42E3C00283478 /* UITextField+Holder.swift */; };
+		AEC191FB21E435E900283478 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC191FA21E435E900283478 /* Launch.storyboard */; };
 		AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */; };
 		AED3FF5321DA9A2D00D7C042 /* Authentication+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */; };
 		AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */; };
@@ -58,7 +59,6 @@
 		AE58FEF621D9B88A00C094F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE58FEF921D9B88A00C094F1 /* OpenPass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenPass.xcdatamodel; sourceTree = "<group>"; };
 		AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE58FEFE21D9B88D00C094F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE58FF0021D9B88D00C094F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE58FF0521D9B88D00C094F1 /* OpenPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPassTests.swift; sourceTree = "<group>"; };
@@ -73,10 +73,12 @@
 		AE81464921DBF1EF00F06C96 /* KeyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyHelper.swift; sourceTree = "<group>"; };
 		AE81464B21DBF33700F06C96 /* Data+Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Encryption.swift"; sourceTree = "<group>"; };
 		AE81464D21DC0CB700F06C96 /* OpenPass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenPass.entitlements; sourceTree = "<group>"; };
-		AEABE9ED21E118F400A64132 /* Group+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AEABE9EE21E118F400A64132 /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		AEABE9EF21E118F400A64132 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AEABE9F021E118F400A64132 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AEC191EF21E42B0500283478 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AEC191F021E42B0500283478 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AEC191F421E42DB900283478 /* TextHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHolder.swift; sourceTree = "<group>"; };
+		AEC191F621E42DDE00283478 /* UITextView+Holder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Holder.swift"; sourceTree = "<group>"; };
+		AEC191F821E42E3C00283478 /* UITextField+Holder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Holder.swift"; sourceTree = "<group>"; };
+		AEC191FA21E435E900283478 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Authentication+Process.swift"; sourceTree = "<group>"; };
 		AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		AE58FEF021D9B88A00C094F1 /* OpenPass */ = {
 			isa = PBXGroup;
 			children = (
+				AEC191F321E42DA400283478 /* Text Holder */,
 				AE81464D21DC0CB700F06C96 /* OpenPass.entitlements */,
 				AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */,
 				AE81464521DBF16300F06C96 /* Encryption and Decryption */,
@@ -137,9 +140,9 @@
 				AE58FF2221D9B9FF00C094F1 /* View Controllers */,
 				AE58FEF521D9B88A00C094F1 /* Main.storyboard */,
 				AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */,
-				AE58FEFD21D9B88D00C094F1 /* LaunchScreen.storyboard */,
 				AE58FF0021D9B88D00C094F1 /* Info.plist */,
 				AE58FEF821D9B88A00C094F1 /* OpenPass.xcdatamodeld */,
+				AEC191FA21E435E900283478 /* Launch.storyboard */,
 			);
 			path = OpenPass;
 			sourceTree = "<group>";
@@ -176,10 +179,8 @@
 		AE58FF2321D9BA0900C094F1 /* Data Management */ = {
 			isa = PBXGroup;
 			children = (
-				AEABE9ED21E118F400A64132 /* Group+CoreDataClass.swift */,
-				AEABE9EE21E118F400A64132 /* Group+CoreDataProperties.swift */,
-				AEABE9EF21E118F400A64132 /* Account+CoreDataClass.swift */,
-				AEABE9F021E118F400A64132 /* Account+CoreDataProperties.swift */,
+				AEC191EF21E42B0500283478 /* Account+CoreDataClass.swift */,
+				AEC191F021E42B0500283478 /* Account+CoreDataProperties.swift */,
 				AE7843B721DBDD6D00B45FFF /* Encryption */,
 				AE7843A321DAD4E000B45FFF /* Core Data Helper */,
 			);
@@ -219,6 +220,16 @@
 				AE81464921DBF1EF00F06C96 /* KeyHelper.swift */,
 			);
 			path = Keys;
+			sourceTree = "<group>";
+		};
+		AEC191F321E42DA400283478 /* Text Holder */ = {
+			isa = PBXGroup;
+			children = (
+				AEC191F421E42DB900283478 /* TextHolder.swift */,
+				AEC191F821E42E3C00283478 /* UITextField+Holder.swift */,
+				AEC191F621E42DDE00283478 /* UITextView+Holder.swift */,
+			);
+			path = "Text Holder";
 			sourceTree = "<group>";
 		};
 		AED3FF4B21DA839A00D7C042 /* Authentication */ = {
@@ -361,9 +372,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE58FEFF21D9B88D00C094F1 /* LaunchScreen.storyboard in Resources */,
 				AE58FEFC21D9B88D00C094F1 /* Assets.xcassets in Resources */,
 				AE58FEF721D9B88A00C094F1 /* Main.storyboard in Resources */,
+				AEC191FB21E435E900283478 /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,23 +447,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE81464C21DBF33700F06C96 /* Data+Encryption.swift in Sources */,
-				AEABE9F221E118F400A64132 /* Group+CoreDataProperties.swift in Sources */,
+				AEC191F121E42B0500283478 /* Account+CoreDataClass.swift in Sources */,
 				AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */,
 				AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */,
 				AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */,
 				AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */,
-				AEABE9F421E118F400A64132 /* Account+CoreDataProperties.swift in Sources */,
+				AEC191F921E42E3C00283478 /* UITextField+Holder.swift in Sources */,
+				AEC191F221E42B0500283478 /* Account+CoreDataProperties.swift in Sources */,
+				AEC191F521E42DB900283478 /* TextHolder.swift in Sources */,
 				AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */,
+				AEC191F721E42DDE00283478 /* UITextView+Holder.swift in Sources */,
 				AE7843B221DBD4CE00B45FFF /* CDHelper.swift in Sources */,
 				AE7843B921DBDD8F00B45FFF /* DataDecoder.swift in Sources */,
 				AE586EA021D9D2590066BC0E /* PasswordsViewController.swift in Sources */,
 				AED3FF5321DA9A2D00D7C042 /* Authentication+Process.swift in Sources */,
-				AEABE9F121E118F400A64132 /* Group+CoreDataClass.swift in Sources */,
 				AE81464A21DBF1EF00F06C96 /* KeyHelper.swift in Sources */,
 				AE81464821DBF17A00F06C96 /* KeychainHelper.swift in Sources */,
 				AE7843BB21DBDED200B45FFF /* DataEncoder.swift in Sources */,
 				AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */,
-				AEABE9F321E118F400A64132 /* Account+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,14 +506,6 @@
 				AE58FEF621D9B88A00C094F1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AE58FEFD21D9B88D00C094F1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE58FEFE21D9B88D00C094F1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
