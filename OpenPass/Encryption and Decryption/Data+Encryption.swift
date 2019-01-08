@@ -21,8 +21,7 @@ extension Data {
         
         let encryptedCFData = SecKeyCreateEncryptedData(publicKey, .rsaEncryptionOAEPSHA256AESGCM, self as CFData, &error)
         let encryptedData = encryptedCFData as Data?
-
-        print("Encrypted: ", encryptedData)
+        
         return encryptedData
     }
     
@@ -36,8 +35,7 @@ extension Data {
         
         let decryptedCFData = SecKeyCreateDecryptedData(key, .rsaEncryptionOAEPSHA256AESGCM, self as CFData, &error)
         let decryptedData = decryptedCFData as Data?
-        
-        print("Decrypted: ", decryptedData)
+
         return decryptedData
         
     }

@@ -28,7 +28,6 @@ struct KeyHelper {
         var error: Unmanaged<CFError>?
         
         let privateKey = SecKeyCreateRandomKey(attributes as CFDictionary, &error)
-        print("Error on generating: ", error)
         return privateKey
         
     }
