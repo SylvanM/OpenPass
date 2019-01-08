@@ -61,7 +61,7 @@ class PasswordsViewController: UITableViewController {
                 
                 // also generate a new key
                 let keyHelper = KeyHelper()
-                var tagString = "com.OpenPass.keys." + name + "key"
+                let tagString = "com.OpenPass.keys." + name + "key"
                 let tag = tagString.data(using: .utf8)!
                 let key = keyHelper.generateKey(for: tag)!
 
