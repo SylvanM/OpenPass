@@ -115,6 +115,7 @@ class AccountViewController: UITableViewController, UITextViewDelegate {
         changeNamePrompt.addTextField { (textField) in
             textField.placeholder = "New account name"
             textField.text = self.account.name
+            textField.clearButtonMode = .whileEditing
         }
         
         let changeNameAction = UIAlertAction(title: "Change", style: .default) { _ in

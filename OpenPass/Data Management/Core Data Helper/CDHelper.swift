@@ -117,9 +117,13 @@ struct CDHelper {
     
     // retrieves all account names
     func fetchNames() -> [String]? {
+        let sortMethod = UserSettings().get(setting: .sorting) as! UserSettings.SortingType
         
         let accountFetch = Account.accountFetchRequest()
-        accountFetch.sortDescriptors = [NSSortDescriptor.init(key: "name", ascending: true)]
+        
+        if sortMethod == .alphabetical {
+            accountFetch.sortDescriptors = [NSSortDescriptor.init(key: "name", ascending: true)]
+        }
         
         do {
             var names: [String] = []
@@ -138,10 +142,5 @@ struct CDHelper {
         
         return nil
     }
-    
-    // for GROUPS
-    
-    
-    
     
 }

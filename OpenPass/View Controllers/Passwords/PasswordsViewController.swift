@@ -14,12 +14,24 @@ class PasswordsViewController: UITableViewController {
     let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let helper = CDHelper()
     
+    var filteredPasswords = [String]() // variable for password names after search
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    
     var passwordList: [String] {
         return helper.fetchNames()!
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Setup the Search Controller
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Passwords"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        
         
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(appReopened), name: UIApplication.willEnterForegroundNotification, object: nil)
@@ -105,7 +117,10 @@ class PasswordsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        if isFiltering() {
+            return filteredPasswords.count
+        }
+        
         return passwordList.count
     }
     
@@ -118,11 +133,47 @@ class PasswordsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "passwordCell", for: indexPath) as! PasswordCell
+        let password: String
         
-        cell.name.text = passwordList[indexPath.row]
-        
+        if isFiltering() {
+            password = filteredPasswords[indexPath.row]
+        } else {
+            password = passwordList[indexPath.row]
+        }
+
+        cell.name.text = password
         return cell
+        
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "passwordCell", for: indexPath) as! PasswordCell
+//
+//        cell.name.text = passwordList[indexPath.row]
+//
+//        return cell
+    }
+    
+    // MARK: Search
+    
+    // MARK: - Private instance methods
+    
+    func searchBarIsEmpty() -> Bool {
+        // Returns true if the text is empty or nil
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        
+        filteredPasswords = passwordList.filter({( name : String) -> Bool in
+            return name.lowercased().contains(searchText.lowercased())
+        })
+        
+        tableView.reloadData()
+        print(filteredPasswords)
     }
 
     /*

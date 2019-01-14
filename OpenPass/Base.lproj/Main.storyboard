@@ -110,7 +110,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="searchDisplayController" destination="CHE-MU-vfh" id="rfm-5d-NRj"/>
+                        <outlet property="searchDisplayController" destination="OmV-tW-PfQ" id="fKM-mm-BjZ"/>
                         <segue destination="s5L-Na-rHc" kind="show" identifier="openAccount" id="cSV-zA-a3G"/>
                         <segue destination="F14-xA-DbX" kind="unwind" identifier="unwindToAuthorization" unwindAction="prepareForUnwindWithSegue:" id="VDk-uc-UKa"/>
                     </connections>
@@ -125,6 +125,14 @@
                         <outlet property="searchResultsDelegate" destination="jVi-lG-0sJ" id="ceL-zG-ZQs"/>
                     </connections>
                 </searchDisplayController>
+                <searchDisplayController id="OmV-tW-PfQ">
+                    <connections>
+                        <outlet property="delegate" destination="jVi-lG-0sJ" id="iRt-sl-dlX"/>
+                        <outlet property="searchContentsController" destination="jVi-lG-0sJ" id="W3S-eB-mE9"/>
+                        <outlet property="searchResultsDataSource" destination="jVi-lG-0sJ" id="vsQ-b6-dES"/>
+                        <outlet property="searchResultsDelegate" destination="jVi-lG-0sJ" id="W6q-Rf-hb2"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="878" y="928"/>
         </scene>
@@ -136,16 +144,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <sections/>
+                        <sections>
+                            <tableViewSection headerTitle="password list" id="JDx-HZ-mCU">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="enD-C9-KHR">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="enD-C9-KHR" id="AI1-ee-avE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pq-Uh-aMG">
+                                                    <rect key="frame" x="16" y="11" width="54" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G9x-Se-3fO">
+                                                    <rect key="frame" x="78" y="7" width="281" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="sVT-cT-VBf" id="0Nu-eT-fqN"/>
                             <outlet property="delegate" destination="sVT-cT-VBf" id="riV-lW-aHV"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="sortingPicker" destination="G9x-Se-3fO" id="Tmm-GO-i11"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNZ-UU-53u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="928"/>
+            <point key="canvasLocation" x="77.599999999999994" y="927.88605697151434"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="Zfo-8T-g9Y">
