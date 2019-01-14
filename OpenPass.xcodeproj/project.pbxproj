@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AE02CBFD21EC0FA800806937 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CBFC21EC0FA800806937 /* UserSettings.swift */; };
+		AE02CC0321EC210900806937 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CC0121EC210900806937 /* Account+CoreDataClass.swift */; };
+		AE02CC0421EC210900806937 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CC0221EC210900806937 /* Account+CoreDataProperties.swift */; };
 		AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */; };
 		AE586EA021D9D2590066BC0E /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */; };
 		AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586EA121D9D7330066BC0E /* AccountViewController.swift */; };
@@ -24,8 +26,6 @@
 		AE81464A21DBF1EF00F06C96 /* KeyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464921DBF1EF00F06C96 /* KeyHelper.swift */; };
 		AE81464C21DBF33700F06C96 /* Data+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464B21DBF33700F06C96 /* Data+Encryption.swift */; };
 		AE8DC20621EA64DD00E68B64 /* Passwords+Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC20521EA64DD00E68B64 /* Passwords+Searching.swift */; };
-		AEC191F121E42B0500283478 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191EF21E42B0500283478 /* Account+CoreDataClass.swift */; };
-		AEC191F221E42B0500283478 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F021E42B0500283478 /* Account+CoreDataProperties.swift */; };
 		AEC191F521E42DB900283478 /* TextHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F421E42DB900283478 /* TextHolder.swift */; };
 		AEC191F721E42DDE00283478 /* UITextView+Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F621E42DDE00283478 /* UITextView+Holder.swift */; };
 		AEC191F921E42E3C00283478 /* UITextField+Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F821E42E3C00283478 /* UITextField+Holder.swift */; };
@@ -54,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		AE02CBFC21EC0FA800806937 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		AE02CC0121EC210900806937 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AE02CC0221EC210900806937 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
 		AE586EA121D9D7330066BC0E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -77,8 +79,6 @@
 		AE81464B21DBF33700F06C96 /* Data+Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Encryption.swift"; sourceTree = "<group>"; };
 		AE81464D21DC0CB700F06C96 /* OpenPass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenPass.entitlements; sourceTree = "<group>"; };
 		AE8DC20521EA64DD00E68B64 /* Passwords+Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Passwords+Searching.swift"; sourceTree = "<group>"; };
-		AEC191EF21E42B0500283478 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AEC191F021E42B0500283478 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AEC191F421E42DB900283478 /* TextHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHolder.swift; sourceTree = "<group>"; };
 		AEC191F621E42DDE00283478 /* UITextView+Holder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Holder.swift"; sourceTree = "<group>"; };
 		AEC191F821E42E3C00283478 /* UITextField+Holder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Holder.swift"; sourceTree = "<group>"; };
@@ -121,13 +121,6 @@
 			path = "Classes and Structs";
 			sourceTree = "<group>";
 		};
-		AE02CBFE21EC146200806937 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		AE58FEE521D9B88900C094F1 = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +144,6 @@
 		AE58FEF021D9B88A00C094F1 /* OpenPass */ = {
 			isa = PBXGroup;
 			children = (
-				AE02CBFE21EC146200806937 /* Protocols */,
 				AE02CBFB21EC0F9700806937 /* Classes and Structs */,
 				AEC191F321E42DA400283478 /* Text Holder */,
 				AE81464D21DC0CB700F06C96 /* OpenPass.entitlements */,
@@ -200,8 +192,8 @@
 		AE58FF2321D9BA0900C094F1 /* Data Management */ = {
 			isa = PBXGroup;
 			children = (
-				AEC191EF21E42B0500283478 /* Account+CoreDataClass.swift */,
-				AEC191F021E42B0500283478 /* Account+CoreDataProperties.swift */,
+				AE02CC0121EC210900806937 /* Account+CoreDataClass.swift */,
+				AE02CC0221EC210900806937 /* Account+CoreDataProperties.swift */,
 				AE7843B721DBDD6D00B45FFF /* Encryption */,
 				AE7843A321DAD4E000B45FFF /* Core Data Helper */,
 			);
@@ -468,19 +460,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE02CC0421EC210900806937 /* Account+CoreDataProperties.swift in Sources */,
 				AE81464C21DBF33700F06C96 /* Data+Encryption.swift in Sources */,
 				AE8DC20621EA64DD00E68B64 /* Passwords+Searching.swift in Sources */,
-				AEC191F121E42B0500283478 /* Account+CoreDataClass.swift in Sources */,
 				AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */,
 				AE02CBFD21EC0FA800806937 /* UserSettings.swift in Sources */,
 				AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */,
 				AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */,
 				AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */,
 				AEC191F921E42E3C00283478 /* UITextField+Holder.swift in Sources */,
-				AEC191F221E42B0500283478 /* Account+CoreDataProperties.swift in Sources */,
 				AEC191F521E42DB900283478 /* TextHolder.swift in Sources */,
 				AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */,
 				AEC191F721E42DDE00283478 /* UITextView+Holder.swift in Sources */,
+				AE02CC0321EC210900806937 /* Account+CoreDataClass.swift in Sources */,
 				AE7843B221DBD4CE00B45FFF /* CDHelper.swift in Sources */,
 				AE7843B921DBDD8F00B45FFF /* DataDecoder.swift in Sources */,
 				AE586EA021D9D2590066BC0E /* PasswordsViewController.swift in Sources */,

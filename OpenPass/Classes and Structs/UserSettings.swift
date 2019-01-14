@@ -44,7 +44,7 @@ class UserSettings {
         
         if setting == .sorting {
             let rawValue = self.dict[setting.rawValue] as! String
-            return SortingType(rawValue: rawValue)
+            return SortingType(rawValue: rawValue)!
         }
         
         return self.dict[setting.rawValue] as Any
@@ -72,6 +72,7 @@ class UserSettings {
     // Sorting types
     enum SortingType: String, CaseIterable {
         case alphabetical = "Alphabetical"
+        case byDate = "By Date Accessed"
     }
     
 }

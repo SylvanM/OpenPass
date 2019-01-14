@@ -123,6 +123,8 @@ struct CDHelper {
         
         if sortMethod == .alphabetical {
             accountFetch.sortDescriptors = [NSSortDescriptor.init(key: "name", ascending: true)]
+        } else if sortMethod == .byDate {
+            accountFetch.sortDescriptors = [NSSortDescriptor.init(key: "dateAccessed", ascending: false)]
         }
         
         do {

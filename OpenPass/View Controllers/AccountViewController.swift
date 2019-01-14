@@ -39,6 +39,9 @@ class AccountViewController: UITableViewController, UITextViewDelegate {
     
     
     override func viewDidLoad() {
+        account.setValue(NSDate(), forKey: "dateAccessed")
+        helper.save(account)
+        
         super.viewDidLoad()
         self.otherInfoField.delegate = self
         
