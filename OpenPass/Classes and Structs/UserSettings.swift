@@ -25,6 +25,7 @@ class UserSettings {
     var filePath: URL
     
     init() {
+        
         filePath = getDocumentsDirectory()
         filePath.appendPathComponent("user_settings.plist")
         
@@ -33,9 +34,11 @@ class UserSettings {
         } else {
             // no previous settings set, so generate default settings
             self.dict = [
-                Setting.sorting.rawValue: SortingType.alphabetical.rawValue
+                Setting.sorting.rawValue: SortingType.alphabetical.rawValue,
+                Setting.darkMode.rawValue: false
             ] as [String : Any]
         }
+        
     }
     
     func get(setting: Setting) -> Any {
@@ -67,9 +70,10 @@ class UserSettings {
     
     enum Setting : String, CaseIterable {
         case sorting = "sorting"
+        case darkMode = "darkMode"
     }
     
-    // Sorting types
+    // Methods of sorting passwords
     enum SortingType: String, CaseIterable {
         case alphabetical = "Alphabetical"
         case byDate = "By Date Accessed"

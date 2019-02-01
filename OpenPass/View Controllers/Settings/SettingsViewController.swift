@@ -18,11 +18,23 @@ class SettingsViewController: UITableViewController, UIPickerViewDelegate, UIPic
     var sortingTypes: [String]!
     
     // MARK: Properties
-    @IBOutlet weak var sortingPicker: UITextField!
+    @IBOutlet weak var sortingPicker: LimitedTextField!
+    @IBOutlet weak var darkModeSwitch: UISwitch!
     
-    // Section constants
+    
+    // Index Path Constants
+    let sortingCellPath = IndexPath(row: 0, section: 0)
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        // refresh theme
+        // if dark mode, do dark mode
+        
+        // set switch
+        if let darkMode = settings.get(setting: .darkMode) as? Bool {
+            self.darkModeSwitch.setOn(darkMode, animated: false)
+        }
+        
         // get row of saved value
         let saved = (settings.get(setting: .sorting) as! UserSettings.SortingType).rawValue
         let index = sortingTypes.firstIndex(of: saved)!
@@ -46,8 +58,8 @@ class SettingsViewController: UITableViewController, UIPickerViewDelegate, UIPic
         
         self.navigationItem.title = "Settings"
         
+        tableView.keyboardDismissMode = .interactive
         
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -55,7 +67,41 @@ class SettingsViewController: UITableViewController, UIPickerViewDelegate, UIPic
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    // MARK: Actions
+    
+    @IBAction func darkModeToggled(_ sender: Any) {
+        
+        // change setting
+        settings.set(darkModeSwitch.isOn, for: .darkMode)
+        
+        // refresh view
+        self.viewWillAppear(true)
+        
+        
+        // send out notification
+        switch darkModeSwitch.isOn {
+        case true:
+            NotificationCenter.default.post(Notification(name: .enterDarkMode))
+        case false:
+            NotificationCenter.default.post(Notification(name: .enterLightMode))
+        }
+    }
+    
+    // MARK: Table View
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // which cell was selected?
+        switch indexPath {
+            
+        case sortingCellPath: // user selected sorting cell
+            sortingPicker.becomeFirstResponder()
+            let sortingCell = tableView.cellForRow(at: sortingCellPath)
+            sortingCell?.setSelected(false, animated: true)
+            
+        default:
+            print("Selected:", indexPath.section, indexPath.row)
+        }
         
     }
     

@@ -147,7 +147,7 @@
                         <sections>
                             <tableViewSection headerTitle="password list" id="JDx-HZ-mCU">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="enD-C9-KHR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="enD-C9-KHR">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="enD-C9-KHR" id="AI1-ee-avE">
@@ -161,14 +161,48 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G9x-Se-3fO">
-                                                    <rect key="frame" x="78" y="7" width="281" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Alphabetical" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G9x-Se-3fO" customClass="LimitedTextField" customModule="OpenPass" customModuleProvider="target">
+                                                    <rect key="frame" x="260" y="11.5" width="99" height="21"/>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="G9x-Se-3fO" firstAttribute="trailing" secondItem="AI1-ee-avE" secondAttribute="trailingMargin" id="5AN-vF-Qxw"/>
+                                                <constraint firstItem="G9x-Se-3fO" firstAttribute="centerY" secondItem="AI1-ee-avE" secondAttribute="centerY" id="RRE-fo-cPN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Appearance" id="Tzd-SM-32U">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="jR7-WF-mni">
+                                        <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jR7-WF-mni" id="wiN-gC-cDN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59c-Zx-LKH">
+                                                    <rect key="frame" x="16" y="11" width="84" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obq-5j-hOR">
+                                                    <rect key="frame" x="310" y="6.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="darkModeToggled:" destination="sVT-cT-VBf" eventType="valueChanged" id="TAt-ZV-JyL"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="obq-5j-hOR" firstAttribute="centerY" secondItem="wiN-gC-cDN" secondAttribute="centerY" id="Ees-4H-Rne"/>
+                                                <constraint firstAttribute="trailing" secondItem="obq-5j-hOR" secondAttribute="trailing" constant="16" id="MpH-Cw-hvT"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -180,7 +214,8 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="sortingPicker" destination="G9x-Se-3fO" id="Tmm-GO-i11"/>
+                        <outlet property="darkModeSwitch" destination="obq-5j-hOR" id="f4x-2t-th7"/>
+                        <outlet property="sortingPicker" destination="G9x-Se-3fO" id="Ktj-MT-01J"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNZ-UU-53u" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -353,10 +388,10 @@
             </objects>
             <point key="canvasLocation" x="1968.8" y="524.43778110944527"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Root Nav Controller-->
         <scene sceneID="zQr-6I-xzX">
             <objects>
-                <navigationController id="TKe-ak-7wY" sceneMemberID="viewController">
+                <navigationController id="TKe-ak-7wY" customClass="RootNavController" customModule="OpenPass" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="9Wk-e6-1ht">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -33,6 +33,9 @@
 		AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */; };
 		AED3FF5321DA9A2D00D7C042 /* Authentication+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */; };
 		AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */; };
+		AEFB54DF21ECD1C500B593CC /* LimitedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB54DE21ECD1C500B593CC /* LimitedTextField.swift */; };
+		AEFB54E221ECE26100B593CC /* Notification+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB54E121ECE26100B593CC /* Notification+Names.swift */; };
+		AEFB54E521ECE2DF00B593CC /* RootNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB54E421ECE2DF00B593CC /* RootNavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Authentication+Process.swift"; sourceTree = "<group>"; };
 		AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
+		AEFB54DE21ECD1C500B593CC /* LimitedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedTextField.swift; sourceTree = "<group>"; };
+		AEFB54E121ECE26100B593CC /* Notification+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Names.swift"; sourceTree = "<group>"; };
+		AEFB54E421ECE2DF00B593CC /* RootNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 		AE58FEF021D9B88A00C094F1 /* OpenPass */ = {
 			isa = PBXGroup;
 			children = (
+				AEFB54E021ECE24F00B593CC /* Extensions */,
 				AE02CBFB21EC0F9700806937 /* Classes and Structs */,
 				AEC191F321E42DA400283478 /* Text Holder */,
 				AE81464D21DC0CB700F06C96 /* OpenPass.entitlements */,
@@ -181,6 +188,7 @@
 		AE58FF2221D9B9FF00C094F1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AEFB54E321ECE2C400B593CC /* Root */,
 				AED3FF5821DA9F4100D7C042 /* Passwords */,
 				AED3FF4F21DA8BCE00D7C042 /* Settings */,
 				AED3FF4B21DA839A00D7C042 /* Authentication */,
@@ -258,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */,
+				AEFB54DE21ECD1C500B593CC /* LimitedTextField.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -270,6 +279,22 @@
 				AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */,
 			);
 			path = Passwords;
+			sourceTree = "<group>";
+		};
+		AEFB54E021ECE24F00B593CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AEFB54E121ECE26100B593CC /* Notification+Names.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AEFB54E321ECE2C400B593CC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				AEFB54E421ECE2DF00B593CC /* RootNavController.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,9 +488,12 @@
 				AE02CC0421EC210900806937 /* Account+CoreDataProperties.swift in Sources */,
 				AE81464C21DBF33700F06C96 /* Data+Encryption.swift in Sources */,
 				AE8DC20621EA64DD00E68B64 /* Passwords+Searching.swift in Sources */,
+				AEFB54E221ECE26100B593CC /* Notification+Names.swift in Sources */,
 				AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */,
 				AE02CBFD21EC0FA800806937 /* UserSettings.swift in Sources */,
 				AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */,
+				AEFB54E521ECE2DF00B593CC /* RootNavController.swift in Sources */,
+				AEFB54DF21ECD1C500B593CC /* LimitedTextField.swift in Sources */,
 				AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */,
 				AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */,
 				AEC191F921E42E3C00283478 /* UITextField+Holder.swift in Sources */,
