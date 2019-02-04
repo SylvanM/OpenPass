@@ -19,6 +19,7 @@
 		AE58FEFC21D9B88D00C094F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */; };
 		AE58FF0A21D9B88D00C094F1 /* OpenPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */; };
 		AE58FF1521D9B88D00C094F1 /* OpenPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */; };
+		AE7006502207C37900E404C5 /* UIColor+Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE70064F2207C37900E404C5 /* UIColor+Themes.swift */; };
 		AE7843B221DBD4CE00B45FFF /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843B121DBD4CE00B45FFF /* CDHelper.swift */; };
 		AE7843B921DBDD8F00B45FFF /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843B821DBDD8F00B45FFF /* DataDecoder.swift */; };
 		AE7843BB21DBDED200B45FFF /* DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843BA21DBDED200B45FFF /* DataEncoder.swift */; };
@@ -74,6 +75,7 @@
 		AE58FF1021D9B88D00C094F1 /* OpenPassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPassUITests.swift; sourceTree = "<group>"; };
 		AE58FF1621D9B88D00C094F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE70064F2207C37900E404C5 /* UIColor+Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Themes.swift"; sourceTree = "<group>"; };
 		AE7843B121DBD4CE00B45FFF /* CDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
 		AE7843B821DBDD8F00B45FFF /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
 		AE7843BA21DBDED200B45FFF /* DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoder.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				AEFB54E121ECE26100B593CC /* Notification+Names.swift */,
+				AE70064F2207C37900E404C5 /* UIColor+Themes.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */,
 				AE02CBFD21EC0FA800806937 /* UserSettings.swift in Sources */,
 				AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */,
+				AE7006502207C37900E404C5 /* UIColor+Themes.swift in Sources */,
 				AEFB54E521ECE2DF00B593CC /* RootNavController.swift in Sources */,
 				AEFB54DF21ECD1C500B593CC /* LimitedTextField.swift in Sources */,
 				AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */,

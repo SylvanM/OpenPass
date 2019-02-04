@@ -60,11 +60,39 @@ class SettingsViewController: UITableViewController, UIPickerViewDelegate, UIPic
         
         tableView.keyboardDismissMode = .interactive
         
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(darkTheme), name: NSNotification.Name.enterDarkMode, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(lightTheme), name: NSNotification.Name.enterLightMode, object: nil)
+        
+        // Check dark mode
+        switch settings.get(setting: .darkMode) as! Bool {
+        case true:
+            darkTheme()
+        case false:
+            darkTheme()
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    @objc func darkTheme() {
+        tableView.backgroundColor = UIColor.darkTheme_tableView
+        
+        for cell in tableView.visibleCells {
+            cell.backgroundColor = UIColor.darkTheme_tableCell
+        }
+    }
+    
+    @objc func lightTheme() {
+        tableView.backgroundColor = UIColor.lightTheme_tableView
+        
+        for cell in tableView.visibleCells {
+            cell.backgroundColor = UIColor.lightTheme_tableCell
+        }
     }
     
     // MARK: Actions

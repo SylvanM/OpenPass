@@ -32,8 +32,19 @@ class PasswordsViewController: UITableViewController {
         navigationItem.searchController = searchController
         definesPresentationContext = true
         
-        
         let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(darkTheme), name: NSNotification.Name.enterDarkMode, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(lightTheme), name: NSNotification.Name.enterLightMode, object: nil)
+        
+        // Check dark mode
+        let settings = UserSettings()
+        switch settings.get(setting: .darkMode) as! Bool {
+        case true:
+            darkTheme()
+        case false:
+            darkTheme()
+        }
+        
         notificationCenter.addObserver(self, selector: #selector(appReopened), name: UIApplication.willEnterForegroundNotification, object: nil)
         
         // Uncomment the following line to preserve selection between presentations
@@ -41,6 +52,14 @@ class PasswordsViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    @objc func darkTheme() {
+        tableView.backgroundColor = UIColor.darkTheme_tableCell
+    }
+    
+    @objc func lightTheme() {
+        tableView.backgroundColor = UIColor.lightTheme_tableCell
     }
     
     @objc func appReopened() {
