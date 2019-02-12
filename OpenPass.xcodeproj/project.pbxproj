@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AE02CBFD21EC0FA800806937 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CBFC21EC0FA800806937 /* UserSettings.swift */; };
 		AE02CC0321EC210900806937 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CC0121EC210900806937 /* Account+CoreDataClass.swift */; };
 		AE02CC0421EC210900806937 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CC0221EC210900806937 /* Account+CoreDataProperties.swift */; };
+		AE3E7313221236EA000313B2 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3E7312221236EA000313B2 /* PersistentContainer.swift */; };
+		AE3E731422124081000313B2 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3E7312221236EA000313B2 /* PersistentContainer.swift */; };
 		AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */; };
 		AE586EA021D9D2590066BC0E /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */; };
 		AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586EA121D9D7330066BC0E /* AccountViewController.swift */; };
@@ -34,6 +36,24 @@
 		AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */; };
 		AED3FF5321DA9A2D00D7C042 /* Authentication+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */; };
 		AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */; };
+		AED9F4092211EB0700BB31EB /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED9F4082211EB0700BB31EB /* Messages.framework */; };
+		AED9F40C2211EB0700BB31EB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED9F40B2211EB0700BB31EB /* MessagesViewController.swift */; };
+		AED9F40F2211EB0700BB31EB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED9F40D2211EB0700BB31EB /* MainInterface.storyboard */; };
+		AED9F4112211EB0700BB31EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED9F4102211EB0700BB31EB /* Assets.xcassets */; };
+		AED9F4152211EB0700BB31EB /* OpenPass Communication.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AED9F4062211EB0600BB31EB /* OpenPass Communication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AED9F4232211EFE800BB31EB /* MVC+CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED9F4222211EFE800BB31EB /* MVC+CollectionViewController.swift */; };
+		AED9F4252211F08C00BB31EB /* PasswordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED9F4242211F08C00BB31EB /* PasswordCollectionViewCell.swift */; };
+		AED9F4272211F21200BB31EB /* OpenPass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF821D9B88A00C094F1 /* OpenPass.xcdatamodeld */; };
+		AED9F43D2211F52100BB31EB /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CC0121EC210900806937 /* Account+CoreDataClass.swift */; };
+		AED9F43E2211F52C00BB31EB /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CC0221EC210900806937 /* Account+CoreDataProperties.swift */; };
+		AED9F43F2211F53200BB31EB /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843B821DBDD8F00B45FFF /* DataDecoder.swift */; };
+		AED9F4402211F53200BB31EB /* DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843BA21DBDED200B45FFF /* DataEncoder.swift */; };
+		AED9F4422211F54E00BB31EB /* Data+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464B21DBF33700F06C96 /* Data+Encryption.swift */; };
+		AED9F4432211F55200BB31EB /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464721DBF17A00F06C96 /* KeychainHelper.swift */; };
+		AED9F4442211F55200BB31EB /* KeyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464921DBF1EF00F06C96 /* KeyHelper.swift */; };
+		AED9F4452211F55E00BB31EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */; };
+		AED9F4462211F57600BB31EB /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CBFC21EC0FA800806937 /* UserSettings.swift */; };
+		AED9F44A2211F7C500BB31EB /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843B121DBD4CE00B45FFF /* CDHelper.swift */; };
 		AEFB54DF21ECD1C500B593CC /* LimitedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB54DE21ECD1C500B593CC /* LimitedTextField.swift */; };
 		AEFB54E221ECE26100B593CC /* Notification+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB54E121ECE26100B593CC /* Notification+Names.swift */; };
 		AEFB54E521ECE2DF00B593CC /* RootNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB54E421ECE2DF00B593CC /* RootNavController.swift */; };
@@ -54,12 +74,34 @@
 			remoteGlobalIDString = AE58FEED21D9B88A00C094F1;
 			remoteInfo = OpenPass;
 		};
+		AED9F4132211EB0700BB31EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE58FEE621D9B88900C094F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AED9F4052211EB0600BB31EB;
+			remoteInfo = "OpenPass Communication";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AED9F4192211EB0700BB31EB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AED9F4152211EB0700BB31EB /* OpenPass Communication.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE02CBFC21EC0FA800806937 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		AE02CC0121EC210900806937 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AE02CC0221EC210900806937 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AE3E7312221236EA000313B2 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
 		AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
 		AE586EA121D9D7330066BC0E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +118,7 @@
 		AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPassUITests.swift; sourceTree = "<group>"; };
 		AE58FF1621D9B88D00C094F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE70064F2207C37900E404C5 /* UIColor+Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Themes.swift"; sourceTree = "<group>"; };
-		AE7843B121DBD4CE00B45FFF /* CDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
+		AE7843B121DBD4CE00B45FFF /* CDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CDHelper.swift; path = "OpenPass/Data Management/Core Data Helper/CDHelper.swift"; sourceTree = SOURCE_ROOT; };
 		AE7843B821DBDD8F00B45FFF /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
 		AE7843BA21DBDED200B45FFF /* DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoder.swift; sourceTree = "<group>"; };
 		AE81464721DBF17A00F06C96 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
@@ -91,6 +133,15 @@
 		AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Authentication+Process.swift"; sourceTree = "<group>"; };
 		AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
+		AED9F4062211EB0600BB31EB /* OpenPass Communication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OpenPass Communication.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED9F4082211EB0700BB31EB /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		AED9F40B2211EB0700BB31EB /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		AED9F40E2211EB0700BB31EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AED9F4102211EB0700BB31EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AED9F4122211EB0700BB31EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED9F4222211EFE800BB31EB /* MVC+CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MVC+CollectionViewController.swift"; sourceTree = "<group>"; };
+		AED9F4242211F08C00BB31EB /* PasswordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCollectionViewCell.swift; sourceTree = "<group>"; };
+		AED9F4262211F12E00BB31EB /* OpenPass Communication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OpenPass Communication.entitlements"; sourceTree = "<group>"; };
 		AEFB54DE21ECD1C500B593CC /* LimitedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedTextField.swift; sourceTree = "<group>"; };
 		AEFB54E121ECE26100B593CC /* Notification+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Names.swift"; sourceTree = "<group>"; };
 		AEFB54E421ECE2DF00B593CC /* RootNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavController.swift; sourceTree = "<group>"; };
@@ -118,6 +169,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AED9F4032211EB0600BB31EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED9F4092211EB0700BB31EB /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -135,6 +194,8 @@
 				AE58FEF021D9B88A00C094F1 /* OpenPass */,
 				AE58FF0821D9B88D00C094F1 /* OpenPassTests */,
 				AE58FF1321D9B88D00C094F1 /* OpenPassUITests */,
+				AED9F40A2211EB0700BB31EB /* OpenPass Communication */,
+				AED9F4072211EB0700BB31EB /* Frameworks */,
 				AE58FEEF21D9B88A00C094F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,6 +206,7 @@
 				AE58FEEE21D9B88A00C094F1 /* OpenPass.app */,
 				AE58FF0521D9B88D00C094F1 /* OpenPassTests.xctest */,
 				AE58FF1021D9B88D00C094F1 /* OpenPassUITests.xctest */,
+				AED9F4062211EB0600BB31EB /* OpenPass Communication.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,6 +264,7 @@
 		AE58FF2321D9BA0900C094F1 /* Data Management */ = {
 			isa = PBXGroup;
 			children = (
+				AE3E7312221236EA000313B2 /* PersistentContainer.swift */,
 				AE02CC0121EC210900806937 /* Account+CoreDataClass.swift */,
 				AE02CC0221EC210900806937 /* Account+CoreDataProperties.swift */,
 				AE7843B721DBDD6D00B45FFF /* Encryption */,
@@ -283,6 +346,36 @@
 			path = Passwords;
 			sourceTree = "<group>";
 		};
+		AED9F4072211EB0700BB31EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AED9F4082211EB0700BB31EB /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AED9F40A2211EB0700BB31EB /* OpenPass Communication */ = {
+			isa = PBXGroup;
+			children = (
+				AED9F4262211F12E00BB31EB /* OpenPass Communication.entitlements */,
+				AED9F4212211EFD500BB31EB /* MessagesViewController */,
+				AED9F40D2211EB0700BB31EB /* MainInterface.storyboard */,
+				AED9F4102211EB0700BB31EB /* Assets.xcassets */,
+				AED9F4122211EB0700BB31EB /* Info.plist */,
+			);
+			path = "OpenPass Communication";
+			sourceTree = "<group>";
+		};
+		AED9F4212211EFD500BB31EB /* MessagesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AED9F40B2211EB0700BB31EB /* MessagesViewController.swift */,
+				AED9F4222211EFE800BB31EB /* MVC+CollectionViewController.swift */,
+				AED9F4242211F08C00BB31EB /* PasswordCollectionViewCell.swift */,
+			);
+			path = MessagesViewController;
+			sourceTree = "<group>";
+		};
 		AEFB54E021ECE24F00B593CC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,10 +403,12 @@
 				AE58FEEA21D9B88A00C094F1 /* Sources */,
 				AE58FEEB21D9B88A00C094F1 /* Frameworks */,
 				AE58FEEC21D9B88A00C094F1 /* Resources */,
+				AED9F4192211EB0700BB31EB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AED9F4142211EB0700BB31EB /* PBXTargetDependency */,
 			);
 			name = OpenPass;
 			productName = OpenPass;
@@ -358,6 +453,23 @@
 			productReference = AE58FF1021D9B88D00C094F1 /* OpenPassUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AED9F4052211EB0600BB31EB /* OpenPass Communication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AED9F4182211EB0700BB31EB /* Build configuration list for PBXNativeTarget "OpenPass Communication" */;
+			buildPhases = (
+				AED9F4022211EB0600BB31EB /* Sources */,
+				AED9F4032211EB0600BB31EB /* Frameworks */,
+				AED9F4042211EB0600BB31EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenPass Communication";
+			productName = "OpenPass Communication";
+			productReference = AED9F4062211EB0600BB31EB /* OpenPass Communication.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -371,6 +483,9 @@
 					AE58FEED21D9B88A00C094F1 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.DataProtection = {
 								enabled = 1;
 							};
@@ -387,10 +502,24 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = AE58FEED21D9B88A00C094F1;
 					};
+					AED9F4052211EB0600BB31EB = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = AE58FEE921D9B88900C094F1 /* Build configuration list for PBXProject "OpenPass" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -403,6 +532,7 @@
 			projectRoot = "";
 			targets = (
 				AE58FEED21D9B88A00C094F1 /* OpenPass */,
+				AED9F4052211EB0600BB31EB /* OpenPass Communication */,
 				AE58FF0421D9B88D00C094F1 /* OpenPassTests */,
 				AE58FF0F21D9B88D00C094F1 /* OpenPassUITests */,
 			);
@@ -431,6 +561,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED9F4042211EB0600BB31EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED9F4112211EB0700BB31EB /* Assets.xcassets in Resources */,
+				AED9F40F2211EB0700BB31EB /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +633,7 @@
 				AEFB54E221ECE26100B593CC /* Notification+Names.swift in Sources */,
 				AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */,
 				AE02CBFD21EC0FA800806937 /* UserSettings.swift in Sources */,
+				AE3E7313221236EA000313B2 /* PersistentContainer.swift in Sources */,
 				AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */,
 				AE7006502207C37900E404C5 /* UIColor+Themes.swift in Sources */,
 				AEFB54E521ECE2DF00B593CC /* RootNavController.swift in Sources */,
@@ -532,6 +672,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AED9F4022211EB0600BB31EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED9F43E2211F52C00BB31EB /* Account+CoreDataProperties.swift in Sources */,
+				AED9F43F2211F53200BB31EB /* DataDecoder.swift in Sources */,
+				AE3E731422124081000313B2 /* PersistentContainer.swift in Sources */,
+				AED9F43D2211F52100BB31EB /* Account+CoreDataClass.swift in Sources */,
+				AED9F40C2211EB0700BB31EB /* MessagesViewController.swift in Sources */,
+				AED9F4232211EFE800BB31EB /* MVC+CollectionViewController.swift in Sources */,
+				AED9F4432211F55200BB31EB /* KeychainHelper.swift in Sources */,
+				AED9F4272211F21200BB31EB /* OpenPass.xcdatamodeld in Sources */,
+				AED9F4422211F54E00BB31EB /* Data+Encryption.swift in Sources */,
+				AED9F4452211F55E00BB31EB /* AppDelegate.swift in Sources */,
+				AED9F4402211F53200BB31EB /* DataEncoder.swift in Sources */,
+				AED9F4252211F08C00BB31EB /* PasswordCollectionViewCell.swift in Sources */,
+				AED9F44A2211F7C500BB31EB /* CDHelper.swift in Sources */,
+				AED9F4462211F57600BB31EB /* UserSettings.swift in Sources */,
+				AED9F4442211F55200BB31EB /* KeyHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -545,6 +707,11 @@
 			target = AE58FEED21D9B88A00C094F1 /* OpenPass */;
 			targetProxy = AE58FF1121D9B88D00C094F1 /* PBXContainerItemProxy */;
 		};
+		AED9F4142211EB0700BB31EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AED9F4052211EB0600BB31EB /* OpenPass Communication */;
+			targetProxy = AED9F4132211EB0700BB31EB /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -554,6 +721,14 @@
 				AE58FEF621D9B88A00C094F1 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AED9F40D2211EB0700BB31EB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AED9F40E2211EB0700BB31EB /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -678,6 +853,7 @@
 		AE58FF1A21D9B88D00C094F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OpenPass/OpenPass.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -697,6 +873,7 @@
 		AE58FF1B21D9B88D00C094F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OpenPass/OpenPass.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -795,6 +972,48 @@
 			};
 			name = Release;
 		};
+		AED9F4162211EB0700BB31EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = "OpenPass Communication/OpenPass Communication.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				INFOPLIST_FILE = "OpenPass Communication/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "martin.OpenPass.OpenPass-Communication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AED9F4172211EB0700BB31EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = "OpenPass Communication/OpenPass Communication.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				INFOPLIST_FILE = "OpenPass Communication/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "martin.OpenPass.OpenPass-Communication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -830,6 +1049,15 @@
 			buildConfigurations = (
 				AE58FF2021D9B88D00C094F1 /* Debug */,
 				AE58FF2121D9B88D00C094F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AED9F4182211EB0700BB31EB /* Build configuration list for PBXNativeTarget "OpenPass Communication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED9F4162211EB0700BB31EB /* Debug */,
+				AED9F4172211EB0700BB31EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

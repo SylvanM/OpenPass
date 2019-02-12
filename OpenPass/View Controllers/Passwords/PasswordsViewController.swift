@@ -11,15 +11,21 @@ import CoreData
 
 class PasswordsViewController: UITableViewController {
     
-    let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let helper = CDHelper()
+    var managedContext: NSManagedObjectContext {
+        return helper.managedContext
+    }
     
     var filteredPasswords = [String]() // variable for password names after search
     
     let searchController = UISearchController(searchResultsController: nil)
     
     var passwordList: [String] {
-        return helper.fetchNames()!
+        if let names = helper.fetchNames() {
+            return names
+        } else {
+            return []
+        }
     }
 
     override func viewDidLoad() {
@@ -33,17 +39,6 @@ class PasswordsViewController: UITableViewController {
         definesPresentationContext = true
         
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(darkTheme), name: NSNotification.Name.enterDarkMode, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(lightTheme), name: NSNotification.Name.enterLightMode, object: nil)
-        
-        // Check dark mode
-        let settings = UserSettings()
-        switch settings.get(setting: .darkMode) as! Bool {
-        case true:
-            darkTheme()
-        case false:
-            darkTheme()
-        }
         
         notificationCenter.addObserver(self, selector: #selector(appReopened), name: UIApplication.willEnterForegroundNotification, object: nil)
         
@@ -52,14 +47,6 @@ class PasswordsViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-    
-    @objc func darkTheme() {
-        tableView.backgroundColor = UIColor.darkTheme_tableCell
-    }
-    
-    @objc func lightTheme() {
-        tableView.backgroundColor = UIColor.lightTheme_tableCell
     }
     
     @objc func appReopened() {
@@ -101,6 +88,8 @@ class PasswordsViewController: UITableViewController {
                 print("Saving: ", key)
                 print("For tag: ", String(data: tag, encoding: .utf8)!)
                 keychain.saveKey(key, for: tag)
+                
+                self.helper.save(newAccount)
                 
                 self.tableView.reloadData()
             }

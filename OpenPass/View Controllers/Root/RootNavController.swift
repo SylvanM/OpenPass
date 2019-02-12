@@ -14,30 +14,8 @@ class RootNavController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // add notification observers
-        NotificationCenter.default.addObserver(self, selector: #selector(enterDarkMode), name: .enterDarkMode, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(enterLightMode), name: .enterLightMode, object: nil)
-        
-        if let darkMode = settings.get(setting: .darkMode) as? Bool {
-            if darkMode {
-                enterDarkMode()
-            } else {
-                enterLightMode()
-            }
-        }
 
         // Do any additional setup after loading the view.
-    }
-    
-    @objc func enterDarkMode() {
-        print("Entering dark mode")
-        self.navigationBar.barStyle = .blackTranslucent
-    }
-    
-    @objc func enterLightMode() {
-        print("Entering light mode")
-        self.navigationBar.barStyle = .default
     }
 
     /*

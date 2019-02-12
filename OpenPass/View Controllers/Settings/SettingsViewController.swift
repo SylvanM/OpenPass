@@ -19,21 +19,12 @@ class SettingsViewController: UITableViewController, UIPickerViewDelegate, UIPic
     
     // MARK: Properties
     @IBOutlet weak var sortingPicker: LimitedTextField!
-    @IBOutlet weak var darkModeSwitch: UISwitch!
     
     
     // Index Path Constants
     let sortingCellPath = IndexPath(row: 0, section: 0)
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        // refresh theme
-        // if dark mode, do dark mode
-        
-        // set switch
-        if let darkMode = settings.get(setting: .darkMode) as? Bool {
-            self.darkModeSwitch.setOn(darkMode, animated: false)
-        }
         
         // get row of saved value
         let saved = (settings.get(setting: .sorting) as! UserSettings.SortingType).rawValue
@@ -60,59 +51,11 @@ class SettingsViewController: UITableViewController, UIPickerViewDelegate, UIPic
         
         tableView.keyboardDismissMode = .interactive
         
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(darkTheme), name: NSNotification.Name.enterDarkMode, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(lightTheme), name: NSNotification.Name.enterLightMode, object: nil)
-        
-        // Check dark mode
-        switch settings.get(setting: .darkMode) as! Bool {
-        case true:
-            darkTheme()
-        case false:
-            darkTheme()
-        }
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-    
-    @objc func darkTheme() {
-        tableView.backgroundColor = UIColor.darkTheme_tableView
-        
-        for cell in tableView.visibleCells {
-            cell.backgroundColor = UIColor.darkTheme_tableCell
-        }
-    }
-    
-    @objc func lightTheme() {
-        tableView.backgroundColor = UIColor.lightTheme_tableView
-        
-        for cell in tableView.visibleCells {
-            cell.backgroundColor = UIColor.lightTheme_tableCell
-        }
-    }
-    
-    // MARK: Actions
-    
-    @IBAction func darkModeToggled(_ sender: Any) {
-        
-        // change setting
-        settings.set(darkModeSwitch.isOn, for: .darkMode)
-        
-        // refresh view
-        self.viewWillAppear(true)
-        
-        
-        // send out notification
-        switch darkModeSwitch.isOn {
-        case true:
-            NotificationCenter.default.post(Notification(name: .enterDarkMode))
-        case false:
-            NotificationCenter.default.post(Notification(name: .enterLightMode))
-        }
     }
     
     // MARK: Table View

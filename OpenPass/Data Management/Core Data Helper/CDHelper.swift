@@ -12,7 +12,7 @@ import CoreData
 
 struct CDHelper {
     
-    let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var managedContext = persistentContainer.viewContext
     
     func save(_ account: Account) {
         
@@ -76,6 +76,11 @@ struct CDHelper {
     // delete account
     func delete(_ account: Account) {
         managedContext.delete(account)
+        do {
+            try managedContext.save()
+        } catch {
+            print("Error: \(error)")
+        }
     }
     
     // all different ways of retrieving data

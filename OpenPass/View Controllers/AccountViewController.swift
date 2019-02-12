@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import CoreData
 
 class AccountViewController: UITableViewController, UITextViewDelegate {
     
     // MARK: Properties
-    let moc    = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let helper = CDHelper()
+    
+    var moc: NSManagedObjectContext {
+        return helper.managedContext
+    }
+    
     
     var keyTag: Data {
         let tagString = "com.OpenPass.keys." + self.name! + "key"
@@ -50,33 +55,12 @@ class AccountViewController: UITableViewController, UITextViewDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(darkTheme), name: NSNotification.Name.enterDarkMode, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(lightTheme), name: NSNotification.Name.enterLightMode, object: nil)
-        
-        // Check dark mode
-        let settings = UserSettings()
-        switch settings.get(setting: .darkMode) as! Bool {
-        case true:
-            darkTheme()
-        case false:
-            darkTheme()
-        }
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.editButtonItem.action = #selector(editName)
         self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-    
-    @objc func darkTheme() {
-        print("Entering dark mode from Accounts")
-    }
-    
-    @objc func lightTheme() {
-        print("Entering light mode from Accounts")
     }
     
     override func viewWillAppear(_ animated: Bool) {

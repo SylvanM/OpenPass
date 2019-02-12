@@ -10,8 +10,8 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)martin.OpenPass</string>
 		<string>$(AppIdentifierPrefix)martin.OpenPass.OpenPass-Communication</string>
+		<string>$(AppIdentifierPrefix)martin.OpenPass</string>
 	</array>
 </dict>
 </plist>
