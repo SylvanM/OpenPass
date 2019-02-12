@@ -28,9 +28,17 @@ extension MessagesViewController: UICollectionViewDelegate, UICollectionViewData
             layout.caption = account.name
             message.layout = layout
             
-            var components = URLComponents()
+            var components = URLComponents(string: "openRecievedPassword://")
+            let passwordString = (account.password as Data?)?.base64EncodedString()
+            print("Password:", passwordString)
+            components!.queryItems = [
+                URLQueryItem(name: "name", value: account.name),
+                URLQueryItem(name: "username", value: passwordString)
+            ]
             
-            message.url = components.url!
+            message.summaryText = components!.url?.absoluteString
+            
+            print("Sending:", message.summaryText)
             
             self.activeConversation?.insert(message, completionHandler: { (error) in
                 print("Error:", error as Any)
