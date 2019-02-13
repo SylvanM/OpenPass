@@ -10,6 +10,8 @@ import UIKit
 import LocalAuthentication
 
 class AuthenticationViewController: UIViewController {
+    
+    var newAccount: [String : Any]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +25,12 @@ class AuthenticationViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "viewAccounts" {
-            _ = segue.destination as! UINavigationController
+            let vc = segue.destination as! RootNavController
+            print("Sending \(String(describing: newAccount)) to RootNavController")
+            vc.inheritedAccount = self.newAccount
         }
+        
+        self.newAccount = nil // prevent from doing this all again
     }
     
     // MARK: Actions

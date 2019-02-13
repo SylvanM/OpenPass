@@ -16,15 +16,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        if url.scheme == "openRecievedPassword" {
-            let recievedData = url.pathComponents
-            print("Recieved:", recievedData)
-        }
+        
+        // open app from someone else's password
+        
+        let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
+        print("Recieved:", url)
+        
+        let items = components?.queryItems
+        
+        // get items from url
+        let name = items![0].value
+        
+        // get date
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss zzz"
+        let date = formatter.date(from: items![1].value!)
+        
+        let extraData = data(from: components, item: 2)
+        let email = data(from: components, item: 3)
+        let username = data(from: components, item: 4)
+        let password = data(from: components, item: 5)
+        
+        (self.window?.rootViewController as? AuthenticationViewController)?.newAccount = [
+            "name": name as Any,
+            "dateAccessed": date as Any,
+            "extraData": extraData as Any,
+            "email": email as Any,
+            "username": username as Any,
+            "password": password as Any
+        ]
+        
         return true
+        
+        
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -79,6 +109,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         return container
     }()
+    
+    // MARK: - Helper Functions
+    func data(from comp: URLComponents?, item: Int) -> Data? {
+        if let comps = comp, let items = comps.queryItems, let value = items[item].value {
+            return Data(base64Encoded: value)!
+        } else {
+            return "".data(using: .utf8)
+        }
+    }
 
     // MARK: - Core Data Saving support
 

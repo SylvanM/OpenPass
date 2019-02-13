@@ -10,6 +10,8 @@
 		AE02CBFD21EC0FA800806937 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CBFC21EC0FA800806937 /* UserSettings.swift */; };
 		AE02CC0321EC210900806937 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CC0121EC210900806937 /* Account+CoreDataClass.swift */; };
 		AE02CC0421EC210900806937 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CC0221EC210900806937 /* Account+CoreDataProperties.swift */; };
+		AE2DA2112213979F00329D48 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2DA2102213979F00329D48 /* CDHelper.swift */; };
+		AE2DA212221397A700329D48 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2DA2102213979F00329D48 /* CDHelper.swift */; };
 		AE3E7313221236EA000313B2 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3E7312221236EA000313B2 /* PersistentContainer.swift */; };
 		AE3E731422124081000313B2 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3E7312221236EA000313B2 /* PersistentContainer.swift */; };
 		AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */; };
@@ -22,7 +24,6 @@
 		AE58FF0A21D9B88D00C094F1 /* OpenPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */; };
 		AE58FF1521D9B88D00C094F1 /* OpenPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */; };
 		AE7006502207C37900E404C5 /* UIColor+Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE70064F2207C37900E404C5 /* UIColor+Themes.swift */; };
-		AE7843B221DBD4CE00B45FFF /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843B121DBD4CE00B45FFF /* CDHelper.swift */; };
 		AE7843B921DBDD8F00B45FFF /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843B821DBDD8F00B45FFF /* DataDecoder.swift */; };
 		AE7843BB21DBDED200B45FFF /* DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843BA21DBDED200B45FFF /* DataEncoder.swift */; };
 		AE81464821DBF17A00F06C96 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464721DBF17A00F06C96 /* KeychainHelper.swift */; };
@@ -51,9 +52,7 @@
 		AED9F4422211F54E00BB31EB /* Data+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464B21DBF33700F06C96 /* Data+Encryption.swift */; };
 		AED9F4432211F55200BB31EB /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464721DBF17A00F06C96 /* KeychainHelper.swift */; };
 		AED9F4442211F55200BB31EB /* KeyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81464921DBF1EF00F06C96 /* KeyHelper.swift */; };
-		AED9F4452211F55E00BB31EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */; };
 		AED9F4462211F57600BB31EB /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE02CBFC21EC0FA800806937 /* UserSettings.swift */; };
-		AED9F44A2211F7C500BB31EB /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7843B121DBD4CE00B45FFF /* CDHelper.swift */; };
 		AEFB54DF21ECD1C500B593CC /* LimitedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB54DE21ECD1C500B593CC /* LimitedTextField.swift */; };
 		AEFB54E221ECE26100B593CC /* Notification+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB54E121ECE26100B593CC /* Notification+Names.swift */; };
 		AEFB54E521ECE2DF00B593CC /* RootNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB54E421ECE2DF00B593CC /* RootNavController.swift */; };
@@ -101,6 +100,7 @@
 		AE02CBFC21EC0FA800806937 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		AE02CC0121EC210900806937 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AE02CC0221EC210900806937 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AE2DA2102213979F00329D48 /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
 		AE3E7312221236EA000313B2 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
 		AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +118,6 @@
 		AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPassUITests.swift; sourceTree = "<group>"; };
 		AE58FF1621D9B88D00C094F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE70064F2207C37900E404C5 /* UIColor+Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Themes.swift"; sourceTree = "<group>"; };
-		AE7843B121DBD4CE00B45FFF /* CDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CDHelper.swift; path = "OpenPass/Data Management/Core Data Helper/CDHelper.swift"; sourceTree = SOURCE_ROOT; };
 		AE7843B821DBDD8F00B45FFF /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
 		AE7843BA21DBDED200B45FFF /* DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoder.swift; sourceTree = "<group>"; };
 		AE81464721DBF17A00F06C96 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
@@ -191,6 +190,8 @@
 		AE58FEE521D9B88900C094F1 = {
 			isa = PBXGroup;
 			children = (
+				AE81464521DBF16300F06C96 /* Encryption and Decryption */,
+				AE58FF2321D9BA0900C094F1 /* Data Management */,
 				AE58FEF021D9B88A00C094F1 /* OpenPass */,
 				AE58FF0821D9B88D00C094F1 /* OpenPassTests */,
 				AE58FF1321D9B88D00C094F1 /* OpenPassUITests */,
@@ -219,8 +220,6 @@
 				AEC191F321E42DA400283478 /* Text Holder */,
 				AE81464D21DC0CB700F06C96 /* OpenPass.entitlements */,
 				AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */,
-				AE81464521DBF16300F06C96 /* Encryption and Decryption */,
-				AE58FF2321D9BA0900C094F1 /* Data Management */,
 				AE58FF2221D9B9FF00C094F1 /* View Controllers */,
 				AE58FEF521D9B88A00C094F1 /* Main.storyboard */,
 				AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */,
@@ -276,7 +275,7 @@
 		AE7843A321DAD4E000B45FFF /* Core Data Helper */ = {
 			isa = PBXGroup;
 			children = (
-				AE7843B121DBD4CE00B45FFF /* CDHelper.swift */,
+				AE2DA2102213979F00329D48 /* CDHelper.swift */,
 			);
 			path = "Core Data Helper";
 			sourceTree = "<group>";
@@ -645,7 +644,7 @@
 				AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */,
 				AEC191F721E42DDE00283478 /* UITextView+Holder.swift in Sources */,
 				AE02CC0321EC210900806937 /* Account+CoreDataClass.swift in Sources */,
-				AE7843B221DBD4CE00B45FFF /* CDHelper.swift in Sources */,
+				AE2DA2112213979F00329D48 /* CDHelper.swift in Sources */,
 				AE7843B921DBDD8F00B45FFF /* DataDecoder.swift in Sources */,
 				AE586EA021D9D2590066BC0E /* PasswordsViewController.swift in Sources */,
 				AED3FF5321DA9A2D00D7C042 /* Authentication+Process.swift in Sources */,
@@ -685,10 +684,9 @@
 				AED9F4432211F55200BB31EB /* KeychainHelper.swift in Sources */,
 				AED9F4272211F21200BB31EB /* OpenPass.xcdatamodeld in Sources */,
 				AED9F4422211F54E00BB31EB /* Data+Encryption.swift in Sources */,
-				AED9F4452211F55E00BB31EB /* AppDelegate.swift in Sources */,
 				AED9F4402211F53200BB31EB /* DataEncoder.swift in Sources */,
+				AE2DA212221397A700329D48 /* CDHelper.swift in Sources */,
 				AED9F4252211F08C00BB31EB /* PasswordCollectionViewCell.swift in Sources */,
-				AED9F44A2211F7C500BB31EB /* CDHelper.swift in Sources */,
 				AED9F4462211F57600BB31EB /* UserSettings.swift in Sources */,
 				AED9F4442211F55200BB31EB /* KeyHelper.swift in Sources */,
 			);

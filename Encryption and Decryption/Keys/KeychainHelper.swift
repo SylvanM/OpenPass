@@ -29,6 +29,14 @@ struct KeychainHelper {
         return key
     }
     
+    func getKey(for name: String) -> SecKey? {
+        // generate data for name
+        let tagString = "com.OpenPass.keys." + name + "key"
+        guard let data = tagString.data(using: .utf8) else { return nil }
+        
+        return getKey(for: data)
+    }
+    
     func saveKey(_ key: SecKey, for tag: Data) {
         let tagString = String(data: tag, encoding: .utf8)!
         print("Saving key: ", tagString)

@@ -39,7 +39,15 @@ class MessagesViewController: MSMessagesAppViewController {
         // This will happen when the extension is about to present UI.
         
         print("Opening message")
+        
+        guard let summary = conversation.selectedMessage?.summaryText else { print("could not get summary"); return }
         print("Recieved:", conversation.selectedMessage?.summaryText as Any)
+        
+        guard let url = URL(string: summary) else { print("could not convert to URL"); return }
+        
+        self.extensionContext?.open(url, completionHandler: { (succeeded) in
+            print("Opening app succeeded:", succeeded)
+        })
         
         // Use this method to configure the extension and restore previously stored state.
     }

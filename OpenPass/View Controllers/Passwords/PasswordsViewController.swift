@@ -11,6 +11,9 @@ import CoreData
 
 class PasswordsViewController: UITableViewController {
     
+    // if opening app from extension
+    var inheritedAccount: [String : Any]?
+    
     let helper = CDHelper()
     var managedContext: NSManagedObjectContext {
         return helper.managedContext
@@ -57,6 +60,12 @@ class PasswordsViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         // reload table view
         tableView.reloadData()
+        
+        if let new = self.inheritedAccount {
+            addPassword(self)
+        } else {
+            print("no new account")
+        }
     }
     
     // MARK: Actions
@@ -68,30 +77,58 @@ class PasswordsViewController: UITableViewController {
             textField.placeholder = "Account name"
         }
         
+        let addClosure: ([String : Any]) -> () = { accountProperties in
+            
+            // also generate a new key
+            let keyHelper = KeyHelper()
+            let tagString = "com.OpenPass.keys." + (accountProperties["name"] as! String) + "key"
+            let tag = tagString.data(using: .utf8)!
+            let key = keyHelper.generateKey(for: tag)!
+            
+            // save new object
+            let accountDescription = NSEntityDescription.entity(forEntityName: "Account", in: self.managedContext)
+            let newAccount = NSManagedObject(entity: accountDescription!, insertInto: self.managedContext) as! Account
+            
+            // encrypt everything that needs to be encrypted
+            
+            let processedProperties: [String : Any] = [
+                "name": accountProperties["name"]!, // doesn't need to be encrypted
+                "dateAccessed": accountProperties["dateAccessed"] ?? NSDate(), // doesn't need to be encrypted
+                "extraData": (accountProperties["extraData"] as? Data)?.encrypt(key: key) as Any,
+                "email": (accountProperties["email"] as? Data)?.encrypt(key: key) as Any,
+                "username": (accountProperties["username"] as? Data)?.encrypt(key: key) as Any,
+                "password": (accountProperties["password"] as? Data)?.encrypt(key: key) as Any
+            ]
+            
+            for (name, value) in processedProperties {
+                if let data = value as? Data {
+                    newAccount.setValue(data, forKey: name)
+                } else if name == "name" {
+                    newAccount.setValue(value as! String, forKey: name)
+                } else if name == "dateAccessed" {
+                    newAccount.setValue(value as! Date, forKey: name)
+                }
+            }
+            
+            // save key
+            let keychain = KeychainHelper()
+            print("Saving: ", key)
+            print("For tag: ", String(data: tag, encoding: .utf8)!)
+            keychain.saveKey(key, for: tag)
+            
+            self.helper.save(newAccount)
+            self.inheritedAccount = nil // prevent from doing this all again
+            
+            self.tableView.reloadData()
+        }
+        
         let addAction = UIAlertAction(title: "Add", style: .default) { (_) in
             if let name = alertController.textFields?[0].text {
+                let properties: [String : Any] = [
+                    "name": name
+                ]
                 
-                // save new object
-                let accountDescription = NSEntityDescription.entity(forEntityName: "Account", in: self.managedContext)
-                let newAccount = NSManagedObject(entity: accountDescription!, insertInto: self.managedContext) as! Account
-                
-                newAccount.setValue(name, forKey: "name")
-                
-                // also generate a new key
-                let keyHelper = KeyHelper()
-                let tagString = "com.OpenPass.keys." + name + "key"
-                let tag = tagString.data(using: .utf8)!
-                let key = keyHelper.generateKey(for: tag)!
-
-                // save key
-                let keychain = KeychainHelper()
-                print("Saving: ", key)
-                print("For tag: ", String(data: tag, encoding: .utf8)!)
-                keychain.saveKey(key, for: tag)
-                
-                self.helper.save(newAccount)
-                
-                self.tableView.reloadData()
+                addClosure(properties)
             }
         }
         
@@ -99,6 +136,15 @@ class PasswordsViewController: UITableViewController {
         
         alertController.addAction(addAction)
         alertController.addAction(cancelAction)
+        
+        if let accountProperties = self.inheritedAccount {
+            
+            print("Doing stuff")
+            addClosure(accountProperties)
+            
+            // no need to run the rest of this function!
+            return
+        }
         
         self.present(alertController, animated: true) {
             // user made the account
