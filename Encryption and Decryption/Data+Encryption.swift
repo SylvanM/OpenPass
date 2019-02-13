@@ -9,8 +9,13 @@
 import Foundation
 import Security
 
+/// Extension to Data class to encrypt and decrypt Data objects
 extension Data {
     
+    /// Encrypts Data object given public key
+    ///
+    /// - Parameters:
+    ///     - key: A SecKey object used to encrypt the data
     func encrypt(key: SecKey) -> Data? {
         
         var error: Unmanaged<CFError>?
@@ -25,6 +30,10 @@ extension Data {
         return encryptedData
     }
     
+    /// Decrypts Data object given public key
+    ///
+    /// - Parameters:
+    ///     - key: A SecKey object used to decrypt the data
     func decrypt(key: SecKey) -> Data? {
         
         var error: Unmanaged<CFError>?

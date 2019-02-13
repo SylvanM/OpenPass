@@ -14,76 +14,11 @@
 		AE2DA212221397A700329D48 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2DA2102213979F00329D48 /* CDHelper.swift */; };
 		AE3E7313221236EA000313B2 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3E7312221236EA000313B2 /* PersistentContainer.swift */; };
 		AE3E731422124081000313B2 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3E7312221236EA000313B2 /* PersistentContainer.swift */; };
-		AE56D6DD2213C28F00F64FDB /* Structs.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6892213C28F00F64FDB /* Structs.html */; };
-		AE56D6DE2213C28F00F64FDB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D68A2213C28F00F64FDB /* index.html */; };
-		AE56D6DF2213C28F00F64FDB /* Functions.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D68B2213C28F00F64FDB /* Functions.html */; };
-		AE56D6E02213C28F00F64FDB /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = AE56D68C2213C28F00F64FDB /* search.json */; };
-		AE56D6E12213C28F00F64FDB /* highlight.css in Resources */ = {isa = PBXBuildFile; fileRef = AE56D68E2213C28F00F64FDB /* highlight.css */; };
-		AE56D6E22213C28F00F64FDB /* jazzy.css in Resources */ = {isa = PBXBuildFile; fileRef = AE56D68F2213C28F00F64FDB /* jazzy.css */; };
-		AE56D6E32213C28F00F64FDB /* MessagesViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6912213C28F00F64FDB /* MessagesViewController.html */; };
-		AE56D6E42213C28F00F64FDB /* Account.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6922213C28F00F64FDB /* Account.html */; };
-		AE56D6E52213C28F00F64FDB /* Setting.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6942213C28F00F64FDB /* Setting.html */; };
-		AE56D6E62213C28F00F64FDB /* SortingType.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6952213C28F00F64FDB /* SortingType.html */; };
-		AE56D6E72213C28F00F64FDB /* PasswordCollectionViewCell.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6962213C28F00F64FDB /* PasswordCollectionViewCell.html */; };
-		AE56D6E82213C28F00F64FDB /* UserSettings.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6972213C28F00F64FDB /* UserSettings.html */; };
-		AE56D6E92213C28F00F64FDB /* PersistentContainer.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6982213C28F00F64FDB /* PersistentContainer.html */; };
-		AE56D6EA2213C28F00F64FDB /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = AE56D69A2213C28F00F64FDB /* jquery.min.js */; };
-		AE56D6EB2213C28F00F64FDB /* jazzy.js in Resources */ = {isa = PBXBuildFile; fileRef = AE56D69B2213C28F00F64FDB /* jazzy.js */; };
-		AE56D6EC2213C28F00F64FDB /* Global Variables.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D69C2213C28F00F64FDB /* Global Variables.html */; };
-		AE56D6ED2213C28F00F64FDB /* Extensions.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D69D2213C28F00F64FDB /* Extensions.html */; };
-		AE56D6EE2213C28F00F64FDB /* Data.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D69F2213C28F00F64FDB /* Data.html */; };
-		AE56D6EF2213C28F00F64FDB /* carat.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A12213C28F00F64FDB /* carat.png */; };
-		AE56D6F02213C28F00F64FDB /* dash.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A22213C28F00F64FDB /* dash.png */; };
-		AE56D6F12213C28F00F64FDB /* gh.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A32213C28F00F64FDB /* gh.png */; };
-		AE56D6F22213C28F00F64FDB /* undocumented.json in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A42213C28F00F64FDB /* undocumented.json */; };
-		AE56D6F32213C28F00F64FDB /* badge.svg in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A52213C28F00F64FDB /* badge.svg */; };
-		AE56D6F42213C28F00F64FDB /* KeychainError.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A82213C28F00F64FDB /* KeychainError.html */; };
-		AE56D6F52213C28F00F64FDB /* KeychainHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A92213C28F00F64FDB /* KeychainHelper.html */; };
-		AE56D6F62213C28F00F64FDB /* DataEncoder.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6AA2213C28F00F64FDB /* DataEncoder.html */; };
-		AE56D6F72213C28F00F64FDB /* KeyHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6AB2213C28F00F64FDB /* KeyHelper.html */; };
-		AE56D6F82213C28F00F64FDB /* CDHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6AC2213C28F00F64FDB /* CDHelper.html */; };
-		AE56D6F92213C28F00F64FDB /* DataDecoder.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6AD2213C28F00F64FDB /* DataDecoder.html */; };
-		AE56D6FA2213C28F00F64FDB /* Classes.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6AE2213C28F00F64FDB /* Classes.html */; };
-		AE56D6FB2213C28F00F64FDB /* docSet.dsidx in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6B32213C28F00F64FDB /* docSet.dsidx */; };
-		AE56D6FC2213C28F00F64FDB /* Structs.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6B52213C28F00F64FDB /* Structs.html */; };
-		AE56D6FD2213C28F00F64FDB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6B62213C28F00F64FDB /* index.html */; };
-		AE56D6FE2213C28F00F64FDB /* Functions.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6B72213C28F00F64FDB /* Functions.html */; };
-		AE56D6FF2213C28F00F64FDB /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6B82213C28F00F64FDB /* search.json */; };
-		AE56D7002213C28F00F64FDB /* highlight.css in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6BA2213C28F00F64FDB /* highlight.css */; };
-		AE56D7012213C28F00F64FDB /* jazzy.css in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6BB2213C28F00F64FDB /* jazzy.css */; };
-		AE56D7022213C28F00F64FDB /* MessagesViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6BD2213C28F00F64FDB /* MessagesViewController.html */; };
-		AE56D7032213C28F00F64FDB /* Account.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6BE2213C28F00F64FDB /* Account.html */; };
-		AE56D7042213C28F00F64FDB /* Setting.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C02213C28F00F64FDB /* Setting.html */; };
-		AE56D7052213C28F00F64FDB /* SortingType.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C12213C28F00F64FDB /* SortingType.html */; };
-		AE56D7062213C28F00F64FDB /* PasswordCollectionViewCell.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C22213C28F00F64FDB /* PasswordCollectionViewCell.html */; };
-		AE56D7072213C28F00F64FDB /* UserSettings.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C32213C28F00F64FDB /* UserSettings.html */; };
-		AE56D7082213C28F00F64FDB /* PersistentContainer.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C42213C28F00F64FDB /* PersistentContainer.html */; };
-		AE56D7092213C28F00F64FDB /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C62213C28F00F64FDB /* jquery.min.js */; };
-		AE56D70A2213C28F00F64FDB /* jazzy.js in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C72213C28F00F64FDB /* jazzy.js */; };
-		AE56D70B2213C28F00F64FDB /* Global Variables.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C82213C28F00F64FDB /* Global Variables.html */; };
-		AE56D70C2213C28F00F64FDB /* Extensions.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C92213C28F00F64FDB /* Extensions.html */; };
-		AE56D70D2213C28F00F64FDB /* Data.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6CB2213C28F00F64FDB /* Data.html */; };
-		AE56D70E2213C28F00F64FDB /* carat.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6CD2213C28F00F64FDB /* carat.png */; };
-		AE56D70F2213C28F00F64FDB /* dash.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6CE2213C28F00F64FDB /* dash.png */; };
-		AE56D7102213C28F00F64FDB /* gh.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6CF2213C28F00F64FDB /* gh.png */; };
-		AE56D7112213C28F00F64FDB /* undocumented.json in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D02213C28F00F64FDB /* undocumented.json */; };
-		AE56D7122213C28F00F64FDB /* badge.svg in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D12213C28F00F64FDB /* badge.svg */; };
-		AE56D7132213C28F00F64FDB /* KeychainError.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D42213C28F00F64FDB /* KeychainError.html */; };
-		AE56D7142213C28F00F64FDB /* KeychainHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D52213C28F00F64FDB /* KeychainHelper.html */; };
-		AE56D7152213C28F00F64FDB /* DataEncoder.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D62213C28F00F64FDB /* DataEncoder.html */; };
-		AE56D7162213C28F00F64FDB /* KeyHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D72213C28F00F64FDB /* KeyHelper.html */; };
-		AE56D7172213C28F00F64FDB /* CDHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D82213C28F00F64FDB /* CDHelper.html */; };
-		AE56D7182213C28F00F64FDB /* DataDecoder.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D92213C28F00F64FDB /* DataDecoder.html */; };
-		AE56D7192213C28F00F64FDB /* Classes.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6DA2213C28F00F64FDB /* Classes.html */; };
-		AE56D71A2213C28F00F64FDB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6DB2213C28F00F64FDB /* Info.plist */; };
-		AE56D71B2213C28F00F64FDB /* .tgz in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6DC2213C28F00F64FDB /* .tgz */; };
 		AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */; };
 		AE586EA021D9D2590066BC0E /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */; };
 		AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586EA121D9D7330066BC0E /* AccountViewController.swift */; };
 		AE58FEF221D9B88A00C094F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF121D9B88A00C094F1 /* AppDelegate.swift */; };
-		AE58FEF721D9B88A00C094F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEF521D9B88A00C094F1 /* Main.storyboard */; };
 		AE58FEFA21D9B88A00C094F1 /* OpenPass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE58FEF821D9B88A00C094F1 /* OpenPass.xcdatamodeld */; };
-		AE58FEFC21D9B88D00C094F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE58FEFB21D9B88D00C094F1 /* Assets.xcassets */; };
 		AE58FF0A21D9B88D00C094F1 /* OpenPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF0921D9B88D00C094F1 /* OpenPassTests.swift */; };
 		AE58FF1521D9B88D00C094F1 /* OpenPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58FF1421D9B88D00C094F1 /* OpenPassUITests.swift */; };
 		AE7006502207C37900E404C5 /* UIColor+Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE70064F2207C37900E404C5 /* UIColor+Themes.swift */; };
@@ -96,7 +31,6 @@
 		AEC191F521E42DB900283478 /* TextHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F421E42DB900283478 /* TextHolder.swift */; };
 		AEC191F721E42DDE00283478 /* UITextView+Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F621E42DDE00283478 /* UITextView+Holder.swift */; };
 		AEC191F921E42E3C00283478 /* UITextField+Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC191F821E42E3C00283478 /* UITextField+Holder.swift */; };
-		AEC191FB21E435E900283478 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC191FA21E435E900283478 /* Launch.storyboard */; };
 		AED3FF5121DA8BE700D7C042 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5021DA8BE700D7C042 /* SettingsViewController.swift */; };
 		AED3FF5321DA9A2D00D7C042 /* Authentication+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5221DA9A2D00D7C042 /* Authentication+Process.swift */; };
 		AED3FF5A21DA9F7E00D7C042 /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3FF5921DA9F7E00D7C042 /* PasswordCell.swift */; };
@@ -908,72 +842,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE56D6F12213C28F00F64FDB /* gh.png in Resources */,
-				AE56D6FA2213C28F00F64FDB /* Classes.html in Resources */,
-				AE56D7072213C28F00F64FDB /* UserSettings.html in Resources */,
-				AE56D6DE2213C28F00F64FDB /* index.html in Resources */,
-				AE56D7082213C28F00F64FDB /* PersistentContainer.html in Resources */,
-				AE56D7152213C28F00F64FDB /* DataEncoder.html in Resources */,
-				AE56D7052213C28F00F64FDB /* SortingType.html in Resources */,
-				AE56D7162213C28F00F64FDB /* KeyHelper.html in Resources */,
-				AE56D70D2213C28F00F64FDB /* Data.html in Resources */,
-				AE56D6EC2213C28F00F64FDB /* Global Variables.html in Resources */,
-				AE56D6FB2213C28F00F64FDB /* docSet.dsidx in Resources */,
-				AE56D6F92213C28F00F64FDB /* DataDecoder.html in Resources */,
-				AE56D7032213C28F00F64FDB /* Account.html in Resources */,
-				AE56D7092213C28F00F64FDB /* jquery.min.js in Resources */,
-				AE56D7042213C28F00F64FDB /* Setting.html in Resources */,
-				AE58FEFC21D9B88D00C094F1 /* Assets.xcassets in Resources */,
-				AE56D6F32213C28F00F64FDB /* badge.svg in Resources */,
-				AE56D6E02213C28F00F64FDB /* search.json in Resources */,
-				AE56D7182213C28F00F64FDB /* DataDecoder.html in Resources */,
-				AE58FEF721D9B88A00C094F1 /* Main.storyboard in Resources */,
-				AE56D7172213C28F00F64FDB /* CDHelper.html in Resources */,
-				AE56D6E12213C28F00F64FDB /* highlight.css in Resources */,
-				AE56D6ED2213C28F00F64FDB /* Extensions.html in Resources */,
-				AE56D7022213C28F00F64FDB /* MessagesViewController.html in Resources */,
-				AE56D7142213C28F00F64FDB /* KeychainHelper.html in Resources */,
-				AE56D71B2213C28F00F64FDB /* .tgz in Resources */,
-				AE56D6E52213C28F00F64FDB /* Setting.html in Resources */,
-				AE56D6F52213C28F00F64FDB /* KeychainHelper.html in Resources */,
-				AE56D6E82213C28F00F64FDB /* UserSettings.html in Resources */,
-				AE56D6FF2213C28F00F64FDB /* search.json in Resources */,
-				AE56D70E2213C28F00F64FDB /* carat.png in Resources */,
-				AE56D7132213C28F00F64FDB /* KeychainError.html in Resources */,
-				AE56D7012213C28F00F64FDB /* jazzy.css in Resources */,
-				AE56D6EF2213C28F00F64FDB /* carat.png in Resources */,
-				AEC191FB21E435E900283478 /* Launch.storyboard in Resources */,
-				AE56D6E42213C28F00F64FDB /* Account.html in Resources */,
-				AE56D70F2213C28F00F64FDB /* dash.png in Resources */,
-				AE56D7122213C28F00F64FDB /* badge.svg in Resources */,
-				AE56D6FC2213C28F00F64FDB /* Structs.html in Resources */,
-				AE56D71A2213C28F00F64FDB /* Info.plist in Resources */,
-				AE56D6FE2213C28F00F64FDB /* Functions.html in Resources */,
-				AE56D7002213C28F00F64FDB /* highlight.css in Resources */,
-				AE56D6E22213C28F00F64FDB /* jazzy.css in Resources */,
-				AE56D6F22213C28F00F64FDB /* undocumented.json in Resources */,
-				AE56D6FD2213C28F00F64FDB /* index.html in Resources */,
-				AE56D7112213C28F00F64FDB /* undocumented.json in Resources */,
-				AE56D6E62213C28F00F64FDB /* SortingType.html in Resources */,
-				AE56D6F72213C28F00F64FDB /* KeyHelper.html in Resources */,
-				AE56D6F82213C28F00F64FDB /* CDHelper.html in Resources */,
-				AE56D70B2213C28F00F64FDB /* Global Variables.html in Resources */,
-				AE56D6E72213C28F00F64FDB /* PasswordCollectionViewCell.html in Resources */,
-				AE56D6EA2213C28F00F64FDB /* jquery.min.js in Resources */,
-				AE56D6EB2213C28F00F64FDB /* jazzy.js in Resources */,
-				AE56D6DF2213C28F00F64FDB /* Functions.html in Resources */,
-				AE56D7062213C28F00F64FDB /* PasswordCollectionViewCell.html in Resources */,
-				AE56D7102213C28F00F64FDB /* gh.png in Resources */,
-				AE56D6DD2213C28F00F64FDB /* Structs.html in Resources */,
-				AE56D6E32213C28F00F64FDB /* MessagesViewController.html in Resources */,
-				AE56D6F02213C28F00F64FDB /* dash.png in Resources */,
-				AE56D6F62213C28F00F64FDB /* DataEncoder.html in Resources */,
-				AE56D70A2213C28F00F64FDB /* jazzy.js in Resources */,
-				AE56D6E92213C28F00F64FDB /* PersistentContainer.html in Resources */,
-				AE56D70C2213C28F00F64FDB /* Extensions.html in Resources */,
-				AE56D7192213C28F00F64FDB /* Classes.html in Resources */,
-				AE56D6F42213C28F00F64FDB /* KeychainError.html in Resources */,
-				AE56D6EE2213C28F00F64FDB /* Data.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1291,6 +1159,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = martin.OpenPass;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1312,6 +1181,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = martin.OpenPass;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

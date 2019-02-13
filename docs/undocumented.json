@@ -197,20 +197,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Encryption and Decryption/Data+Encryption.swift",
-      "line": 14,
-      "symbol": "Data.encrypt(key:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Encryption and Decryption/Data+Encryption.swift",
-      "line": 28,
-      "symbol": "Data.decrypt(key:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Encryption and Decryption/Keys/KeyHelper.swift",
       "line": 13,
       "symbol": "KeyHelper",
