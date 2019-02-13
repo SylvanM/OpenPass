@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "62f477d19043cb9db4946c757bcf866c"
-build_time: [1550028369, 436519000]
+build_time: [1550061576, 971029000]
 inputs:
   "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift": [9223372036, 854775807]
   "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Encryption and Decryption/Data+Encryption.swift": [9223372036, 854775807]

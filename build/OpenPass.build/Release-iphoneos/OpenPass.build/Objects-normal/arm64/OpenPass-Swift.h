@@ -188,6 +188,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
+/// Object that holds information for a user’s Account
+/// Information in the account of the NSData type is encrypted when stored.
 SWIFT_CLASS("_TtC8OpenPass7Account")
 @interface Account : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -197,12 +199,17 @@ SWIFT_CLASS("_TtC8OpenPass7Account")
 @class NSDate;
 
 @interface Account (SWIFT_EXTENSION(OpenPass))
+/// Email associated with account
 @property (nonatomic, strong) NSData * _Nullable email;
+/// Any extra information related to the account (e.g. notes, websites, security questions, etc.)
 @property (nonatomic, strong) NSData * _Nullable extraData;
-@property (nonatomic, copy) NSString * _Nullable group;
+/// Name of account
 @property (nonatomic, copy) NSString * _Nullable name;
+/// Password associated with account
 @property (nonatomic, strong) NSData * _Nullable password;
+/// Username associated with account
 @property (nonatomic, strong) NSData * _Nullable username;
+/// Last time account was accessed; used for sorting by “recent”
 @property (nonatomic, strong) NSDate * _Nullable dateAccessed;
 @end
 
@@ -245,8 +252,10 @@ SWIFT_CLASS("_TtC8OpenPass21AccountViewController")
 
 SWIFT_CLASS("_TtC8OpenPass11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+/// Window of the app
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+/// Called when app is opened from the iMessage extension
 - (BOOL)application:(UIApplication * _Nonnull)app openURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
@@ -317,8 +326,10 @@ SWIFT_CLASS("_TtC8OpenPass23PasswordsViewController")
 
 @class NSManagedObjectModel;
 
+/// A subclass of NSPersistentContainer used for all Targets in the project
 SWIFT_CLASS("_TtC8OpenPass19PersistentContainer")
 @interface PersistentContainer : NSPersistentContainer
+/// Returns the default directory for the group
 + (NSURL * _Nonnull)defaultDirectoryURL SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithName:(NSString * _Nonnull)name managedObjectModel:(NSManagedObjectModel * _Nonnull)model OBJC_DESIGNATED_INITIALIZER;
 @end

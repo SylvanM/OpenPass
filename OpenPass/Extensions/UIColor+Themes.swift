@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Adding more UIColor constants for light mode and dark mode
 extension UIColor {
     static let dark: CGFloat = 0.5
     

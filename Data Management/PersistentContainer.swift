@@ -9,8 +9,10 @@
 import Foundation
 import CoreData
 
+/// A subclass of NSPersistentContainer used for all Targets in the project
 class PersistentContainer: NSPersistentContainer {
     
+    /// Returns the default directory for the group
     override class func defaultDirectoryURL() -> URL {
         return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.OpenPass")!
     }
@@ -21,9 +23,11 @@ class PersistentContainer: NSPersistentContainer {
     
 }
 
+/// Global variable for the global persistent container, so that all extensions share the same "database"
 var persistentContainer: PersistentContainer = {
     let container = PersistentContainer(name: "OpenPass")
     
+    /// Loads saved information from container
     container.loadPersistentStores(completionHandler: { (storeDescription: NSPersistentStoreDescription, error: Error?) in
         if let error = error as NSError? {
             fatalError("UnResolved error \(error), \(error.userInfo)")

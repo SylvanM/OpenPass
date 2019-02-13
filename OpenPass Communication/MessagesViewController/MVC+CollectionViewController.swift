@@ -11,6 +11,7 @@ import UIKit
 import CoreData
 import Messages
 
+/// Extension to MessagesViewController to handle the collection view and send a password
 extension MessagesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -54,7 +55,7 @@ extension MessagesViewController: UICollectionViewDelegate, UICollectionViewData
             var username: String?
             var password: String?
             
-            name = encryptedAccount.name!
+            name = "Imported: " + encryptedAccount.name!
             
             // format date into string
             let dateFormatter = DateFormatter()

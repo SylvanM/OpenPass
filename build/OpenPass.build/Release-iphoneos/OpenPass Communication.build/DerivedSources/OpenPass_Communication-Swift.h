@@ -188,6 +188,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
+/// Object that holds information for a user’s Account
+/// Information in the account of the NSData type is encrypted when stored.
 SWIFT_CLASS("_TtC22OpenPass_Communication7Account")
 @interface Account : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -197,12 +199,17 @@ SWIFT_CLASS("_TtC22OpenPass_Communication7Account")
 @class NSDate;
 
 @interface Account (SWIFT_EXTENSION(OpenPass_Communication))
+/// Email associated with account
 @property (nonatomic, strong) NSData * _Nullable email;
+/// Any extra information related to the account (e.g. notes, websites, security questions, etc.)
 @property (nonatomic, strong) NSData * _Nullable extraData;
-@property (nonatomic, copy) NSString * _Nullable group;
+/// Name of account
 @property (nonatomic, copy) NSString * _Nullable name;
+/// Password associated with account
 @property (nonatomic, strong) NSData * _Nullable password;
+/// Username associated with account
 @property (nonatomic, strong) NSData * _Nullable username;
+/// Last time account was accessed; used for sorting by “recent”
 @property (nonatomic, strong) NSDate * _Nullable dateAccessed;
 @end
 
@@ -237,6 +244,8 @@ SWIFT_CLASS("_TtC22OpenPass_Communication22MessagesViewController")
 
 @class UILabel;
 
+/// Cell class for a cell in the password collection view
+/// This controls the appearance and behavior of the cell
 SWIFT_CLASS("_TtC22OpenPass_Communication26PasswordCollectionViewCell")
 @interface PasswordCollectionViewCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
@@ -247,8 +256,10 @@ SWIFT_CLASS("_TtC22OpenPass_Communication26PasswordCollectionViewCell")
 
 @class NSManagedObjectModel;
 
+/// A subclass of NSPersistentContainer used for all Targets in the project
 SWIFT_CLASS("_TtC22OpenPass_Communication19PersistentContainer")
 @interface PersistentContainer : NSPersistentContainer
+/// Returns the default directory for the group
 + (NSURL * _Nonnull)defaultDirectoryURL SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithName:(NSString * _Nonnull)name managedObjectModel:(NSManagedObjectModel * _Nonnull)model OBJC_DESIGNATED_INITIALIZER;
 @end

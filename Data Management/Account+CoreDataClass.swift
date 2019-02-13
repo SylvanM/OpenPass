@@ -10,7 +10,8 @@
 import Foundation
 import CoreData
 
-
+/// Object that holds information for a user's Account
+/// Information in the account of the NSData type is encrypted when stored.
 public class Account: NSManagedObject {
 
 }

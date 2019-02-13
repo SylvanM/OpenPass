@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Extension defining darkMode and lightMode notifications
 extension Notification.Name {
     static let enterDarkMode = Notification.Name("enterDarkMode")
     static let enterLightMode = Notification.Name("enterLightMode")

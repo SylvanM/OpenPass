@@ -10,10 +10,18 @@ import Foundation
 import UIKit
 import CoreData
 
+/// Structure helping with all common CoreData operations
 struct CDHelper {
     
+    /// The context in which all operations will take place
     var managedContext = persistentContainer.viewContext
     
+    /**
+     Saves an Account object to the CoreDataStack
+     
+     - Parameters:
+     - account: The account to be saved
+    */
     func save(_ account: Account) {
         
         if let previouslySaved = fetch(account.name!) {
@@ -50,7 +58,13 @@ struct CDHelper {
         
     }
     
-    // change name of thing
+    /**
+     Changes name of a saved Account
+     
+     - Parameters:
+     - originalName: Name of original object to retrieve and change the name of
+     - newName: New name of object
+    */
     func changeName(of originalName: String, to newName: String) {
         
         // get original object
@@ -73,7 +87,7 @@ struct CDHelper {
         
     }
     
-    // delete account
+    /// Deletes a saved account
     func delete(_ account: Account) {
         managedContext.delete(account)
         do {
@@ -83,9 +97,11 @@ struct CDHelper {
         }
     }
     
-    // all different ways of retrieving data
+    /// MARK: Data Retrieval
     
-    // retrieves ALL saved accounts
+    /// Retrieves all saved accounts
+    ///
+    /// - Returns: an optional array of Accounts
     func fetch() -> [Account]? {
         
         let accountFetch = Account.accountFetchRequest()
@@ -101,7 +117,9 @@ struct CDHelper {
         
     }
     
-    // retrieves specific Account with a specific name
+    /// Retrieves account of specified name
+    ///
+    /// - Returns: An optional account object. Will be nil if it doesn't exist.
     func fetch(_ name: String) -> Account? {
         
         let accountFetch = Account.accountFetchRequest()
@@ -120,7 +138,9 @@ struct CDHelper {
         
     }
     
-    // retrieves all account names
+    /// Retrieves all Accounts
+    ///
+    /// - Returns: The Account names as an optional string array
     func fetchNames() -> [String]? {
         let sortMethod = UserSettings().get(setting: .sorting) as! UserSettings.SortingType
         

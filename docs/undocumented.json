@@ -1,20 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataClass.swift",
-      "line": null,
-      "symbol": "Account",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataClass.swift",
-      "line": 14,
-      "symbol": "Account",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
       "line": 16,
       "symbol": "Account.accountFetchRequest()",
@@ -22,178 +8,10 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/PersistentContainer.swift",
       "line": 20,
-      "symbol": "Account.email",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
-      "line": 21,
-      "symbol": "Account.extraData",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
-      "line": 22,
-      "symbol": "Account.group",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
-      "line": 23,
-      "symbol": "Account.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
-      "line": 24,
-      "symbol": "Account.password",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
-      "line": 25,
-      "symbol": "Account.username",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
-      "line": 26,
-      "symbol": "Account.dateAccessed",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Core Data Helper/CDHelper.swift",
-      "line": 13,
-      "symbol": "CDHelper",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Core Data Helper/CDHelper.swift",
-      "line": 15,
-      "symbol": "CDHelper.managedContext",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Core Data Helper/CDHelper.swift",
-      "line": 17,
-      "symbol": "CDHelper.save(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Core Data Helper/CDHelper.swift",
-      "line": 54,
-      "symbol": "CDHelper.changeName(of:to:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Core Data Helper/CDHelper.swift",
-      "line": 77,
-      "symbol": "CDHelper.delete(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Core Data Helper/CDHelper.swift",
-      "line": 89,
-      "symbol": "CDHelper.fetch()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Core Data Helper/CDHelper.swift",
-      "line": 105,
-      "symbol": "CDHelper.fetch(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Core Data Helper/CDHelper.swift",
-      "line": 124,
-      "symbol": "CDHelper.fetchNames()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Encryption/DataDecoder.swift",
-      "line": 11,
-      "symbol": "DataDecoder",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Encryption/DataDecoder.swift",
-      "line": 13,
-      "symbol": "DataDecoder.decrypt(_:key:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Encryption/DataDecoder.swift",
-      "line": 18,
-      "symbol": "DataDecoder.decode(encodedData:key:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Encryption/DataEncoder.swift",
-      "line": 11,
-      "symbol": "DataEncoder",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Encryption/DataEncoder.swift",
-      "line": 13,
-      "symbol": "DataEncoder.encrypt(_:key:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Encryption/DataEncoder.swift",
-      "line": 20,
-      "symbol": "DataEncoder.encode(string:key:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/PersistentContainer.swift",
-      "line": 12,
-      "symbol": "PersistentContainer",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/PersistentContainer.swift",
-      "line": 14,
-      "symbol": "PersistentContainer.defaultDirectoryURL()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/PersistentContainer.swift",
-      "line": 18,
       "symbol": "PersistentContainer.init(name:managedObjectModel:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/PersistentContainer.swift",
-      "line": 24,
-      "symbol": "persistentContainer",
-      "symbol_kind": "source.lang.swift.decl.var.global",
       "warning": "undocumented"
     },
     {
@@ -275,112 +93,105 @@
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 11,
-      "symbol": "getDocumentsDirectory()",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 17,
+      "line": 20,
       "symbol": "UserSettings",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 19,
+      "line": 22,
       "symbol": "UserSettings.dict",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 25,
+      "line": 28,
       "symbol": "UserSettings.filePath",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 27,
+      "line": 30,
       "symbol": "UserSettings.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 44,
+      "line": 47,
       "symbol": "UserSettings.get(setting:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 56,
+      "line": 59,
       "symbol": "UserSettings.set(_:for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 60,
+      "line": 63,
       "symbol": "UserSettings.saveSettings()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 71,
+      "line": 74,
       "symbol": "UserSettings.Setting",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 72,
+      "line": 75,
       "symbol": "UserSettings.Setting.sorting",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 73,
+      "line": 76,
       "symbol": "UserSettings.Setting.darkMode",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 77,
+      "line": 80,
       "symbol": "UserSettings.SortingType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 78,
+      "line": 81,
       "symbol": "UserSettings.SortingType.alphabetical",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift",
-      "line": 79,
+      "line": 82,
       "symbol": "UserSettings.SortingType.byDate",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass Communication/MessagesViewController/MVC+CollectionViewController.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "MessagesViewController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass Communication/MessagesViewController/MVC+CollectionViewController.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "MessagesViewController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -478,35 +289,28 @@
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass Communication/MessagesViewController/PasswordCollectionViewCell.swift",
-      "line": 11,
-      "symbol": "PasswordCollectionViewCell",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass Communication/MessagesViewController/PasswordCollectionViewCell.swift",
-      "line": 13,
+      "line": 16,
       "symbol": "PasswordCollectionViewCell.label",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass Communication/MessagesViewController/PasswordCollectionViewCell.swift",
-      "line": 15,
+      "line": 18,
       "symbol": "PasswordCollectionViewCell.account",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass Communication/MessagesViewController/PasswordCollectionViewCell.swift",
-      "line": 17,
+      "line": 20,
       "symbol": "PasswordCollectionViewCell.selectedClosure",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass Communication/MessagesViewController/PasswordCollectionViewCell.swift",
-      "line": 19,
+      "line": 22,
       "symbol": "PasswordCollectionViewCell.isSelected",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
