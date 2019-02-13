@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataClass.swift",
+      "line": null,
+      "symbol": "Account",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataClass.swift",
+      "line": 14,
+      "symbol": "Account",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "Account.accountFetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "Account.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "Account.extraData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "Account.group",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "Account.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
+      "line": 24,
+      "symbol": "Account.password",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
+      "line": 25,
+      "symbol": "Account.username",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift",
+      "line": 26,
+      "symbol": "Account.dateAccessed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass"
+}
