@@ -1,0 +1,17 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "73b6825d65eca57d454d2729f1f25242"
+build_time: [1550027488, 440388000]
+inputs:
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataProperties.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Encryption/DataDecoder.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/PersistentContainer.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Account+CoreDataClass.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass Communication/MessagesViewController/MessagesViewController.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass Communication/MessagesViewController/MVC+CollectionViewController.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Encryption and Decryption/Keys/KeychainHelper.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Encryption and Decryption/Data+Encryption.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Encryption/DataEncoder.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Data Management/Core Data Helper/CDHelper.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass Communication/MessagesViewController/PasswordCollectionViewCell.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/OpenPass/Classes and Structs/UserSettings.swift": [9223372036, 854775807]
+  "/Users/sylvanm/Programming/Xcode Projects/iOS Apps/Full Apps/OpenPass/Encryption and Decryption/Keys/KeyHelper.swift": [9223372036, 854775807]

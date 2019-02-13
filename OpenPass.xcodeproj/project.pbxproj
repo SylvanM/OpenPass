@@ -14,6 +14,69 @@
 		AE2DA212221397A700329D48 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2DA2102213979F00329D48 /* CDHelper.swift */; };
 		AE3E7313221236EA000313B2 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3E7312221236EA000313B2 /* PersistentContainer.swift */; };
 		AE3E731422124081000313B2 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3E7312221236EA000313B2 /* PersistentContainer.swift */; };
+		AE56D6DD2213C28F00F64FDB /* Structs.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6892213C28F00F64FDB /* Structs.html */; };
+		AE56D6DE2213C28F00F64FDB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D68A2213C28F00F64FDB /* index.html */; };
+		AE56D6DF2213C28F00F64FDB /* Functions.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D68B2213C28F00F64FDB /* Functions.html */; };
+		AE56D6E02213C28F00F64FDB /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = AE56D68C2213C28F00F64FDB /* search.json */; };
+		AE56D6E12213C28F00F64FDB /* highlight.css in Resources */ = {isa = PBXBuildFile; fileRef = AE56D68E2213C28F00F64FDB /* highlight.css */; };
+		AE56D6E22213C28F00F64FDB /* jazzy.css in Resources */ = {isa = PBXBuildFile; fileRef = AE56D68F2213C28F00F64FDB /* jazzy.css */; };
+		AE56D6E32213C28F00F64FDB /* MessagesViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6912213C28F00F64FDB /* MessagesViewController.html */; };
+		AE56D6E42213C28F00F64FDB /* Account.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6922213C28F00F64FDB /* Account.html */; };
+		AE56D6E52213C28F00F64FDB /* Setting.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6942213C28F00F64FDB /* Setting.html */; };
+		AE56D6E62213C28F00F64FDB /* SortingType.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6952213C28F00F64FDB /* SortingType.html */; };
+		AE56D6E72213C28F00F64FDB /* PasswordCollectionViewCell.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6962213C28F00F64FDB /* PasswordCollectionViewCell.html */; };
+		AE56D6E82213C28F00F64FDB /* UserSettings.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6972213C28F00F64FDB /* UserSettings.html */; };
+		AE56D6E92213C28F00F64FDB /* PersistentContainer.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6982213C28F00F64FDB /* PersistentContainer.html */; };
+		AE56D6EA2213C28F00F64FDB /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = AE56D69A2213C28F00F64FDB /* jquery.min.js */; };
+		AE56D6EB2213C28F00F64FDB /* jazzy.js in Resources */ = {isa = PBXBuildFile; fileRef = AE56D69B2213C28F00F64FDB /* jazzy.js */; };
+		AE56D6EC2213C28F00F64FDB /* Global Variables.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D69C2213C28F00F64FDB /* Global Variables.html */; };
+		AE56D6ED2213C28F00F64FDB /* Extensions.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D69D2213C28F00F64FDB /* Extensions.html */; };
+		AE56D6EE2213C28F00F64FDB /* Data.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D69F2213C28F00F64FDB /* Data.html */; };
+		AE56D6EF2213C28F00F64FDB /* carat.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A12213C28F00F64FDB /* carat.png */; };
+		AE56D6F02213C28F00F64FDB /* dash.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A22213C28F00F64FDB /* dash.png */; };
+		AE56D6F12213C28F00F64FDB /* gh.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A32213C28F00F64FDB /* gh.png */; };
+		AE56D6F22213C28F00F64FDB /* undocumented.json in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A42213C28F00F64FDB /* undocumented.json */; };
+		AE56D6F32213C28F00F64FDB /* badge.svg in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A52213C28F00F64FDB /* badge.svg */; };
+		AE56D6F42213C28F00F64FDB /* KeychainError.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A82213C28F00F64FDB /* KeychainError.html */; };
+		AE56D6F52213C28F00F64FDB /* KeychainHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6A92213C28F00F64FDB /* KeychainHelper.html */; };
+		AE56D6F62213C28F00F64FDB /* DataEncoder.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6AA2213C28F00F64FDB /* DataEncoder.html */; };
+		AE56D6F72213C28F00F64FDB /* KeyHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6AB2213C28F00F64FDB /* KeyHelper.html */; };
+		AE56D6F82213C28F00F64FDB /* CDHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6AC2213C28F00F64FDB /* CDHelper.html */; };
+		AE56D6F92213C28F00F64FDB /* DataDecoder.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6AD2213C28F00F64FDB /* DataDecoder.html */; };
+		AE56D6FA2213C28F00F64FDB /* Classes.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6AE2213C28F00F64FDB /* Classes.html */; };
+		AE56D6FB2213C28F00F64FDB /* docSet.dsidx in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6B32213C28F00F64FDB /* docSet.dsidx */; };
+		AE56D6FC2213C28F00F64FDB /* Structs.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6B52213C28F00F64FDB /* Structs.html */; };
+		AE56D6FD2213C28F00F64FDB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6B62213C28F00F64FDB /* index.html */; };
+		AE56D6FE2213C28F00F64FDB /* Functions.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6B72213C28F00F64FDB /* Functions.html */; };
+		AE56D6FF2213C28F00F64FDB /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6B82213C28F00F64FDB /* search.json */; };
+		AE56D7002213C28F00F64FDB /* highlight.css in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6BA2213C28F00F64FDB /* highlight.css */; };
+		AE56D7012213C28F00F64FDB /* jazzy.css in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6BB2213C28F00F64FDB /* jazzy.css */; };
+		AE56D7022213C28F00F64FDB /* MessagesViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6BD2213C28F00F64FDB /* MessagesViewController.html */; };
+		AE56D7032213C28F00F64FDB /* Account.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6BE2213C28F00F64FDB /* Account.html */; };
+		AE56D7042213C28F00F64FDB /* Setting.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C02213C28F00F64FDB /* Setting.html */; };
+		AE56D7052213C28F00F64FDB /* SortingType.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C12213C28F00F64FDB /* SortingType.html */; };
+		AE56D7062213C28F00F64FDB /* PasswordCollectionViewCell.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C22213C28F00F64FDB /* PasswordCollectionViewCell.html */; };
+		AE56D7072213C28F00F64FDB /* UserSettings.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C32213C28F00F64FDB /* UserSettings.html */; };
+		AE56D7082213C28F00F64FDB /* PersistentContainer.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C42213C28F00F64FDB /* PersistentContainer.html */; };
+		AE56D7092213C28F00F64FDB /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C62213C28F00F64FDB /* jquery.min.js */; };
+		AE56D70A2213C28F00F64FDB /* jazzy.js in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C72213C28F00F64FDB /* jazzy.js */; };
+		AE56D70B2213C28F00F64FDB /* Global Variables.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C82213C28F00F64FDB /* Global Variables.html */; };
+		AE56D70C2213C28F00F64FDB /* Extensions.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6C92213C28F00F64FDB /* Extensions.html */; };
+		AE56D70D2213C28F00F64FDB /* Data.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6CB2213C28F00F64FDB /* Data.html */; };
+		AE56D70E2213C28F00F64FDB /* carat.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6CD2213C28F00F64FDB /* carat.png */; };
+		AE56D70F2213C28F00F64FDB /* dash.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6CE2213C28F00F64FDB /* dash.png */; };
+		AE56D7102213C28F00F64FDB /* gh.png in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6CF2213C28F00F64FDB /* gh.png */; };
+		AE56D7112213C28F00F64FDB /* undocumented.json in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D02213C28F00F64FDB /* undocumented.json */; };
+		AE56D7122213C28F00F64FDB /* badge.svg in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D12213C28F00F64FDB /* badge.svg */; };
+		AE56D7132213C28F00F64FDB /* KeychainError.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D42213C28F00F64FDB /* KeychainError.html */; };
+		AE56D7142213C28F00F64FDB /* KeychainHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D52213C28F00F64FDB /* KeychainHelper.html */; };
+		AE56D7152213C28F00F64FDB /* DataEncoder.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D62213C28F00F64FDB /* DataEncoder.html */; };
+		AE56D7162213C28F00F64FDB /* KeyHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D72213C28F00F64FDB /* KeyHelper.html */; };
+		AE56D7172213C28F00F64FDB /* CDHelper.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D82213C28F00F64FDB /* CDHelper.html */; };
+		AE56D7182213C28F00F64FDB /* DataDecoder.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6D92213C28F00F64FDB /* DataDecoder.html */; };
+		AE56D7192213C28F00F64FDB /* Classes.html in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6DA2213C28F00F64FDB /* Classes.html */; };
+		AE56D71A2213C28F00F64FDB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6DB2213C28F00F64FDB /* Info.plist */; };
+		AE56D71B2213C28F00F64FDB /* .tgz in Resources */ = {isa = PBXBuildFile; fileRef = AE56D6DC2213C28F00F64FDB /* .tgz */; };
 		AE586E9E21D9D2260066BC0E /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */; };
 		AE586EA021D9D2590066BC0E /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */; };
 		AE586EA221D9D7330066BC0E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586EA121D9D7330066BC0E /* AccountViewController.swift */; };
@@ -101,34 +164,70 @@
 		AE02CC0121EC210900806937 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AE02CC0221EC210900806937 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AE2DA2102213979F00329D48 /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
-		AE2DA2142213BC4000329D48 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		AE2DA2152213BC4000329D48 /* search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
-		AE2DA2172213BC4000329D48 /* highlight.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = highlight.css; sourceTree = "<group>"; };
-		AE2DA2182213BC4000329D48 /* jazzy.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jazzy.css; sourceTree = "<group>"; };
-		AE2DA21A2213BC4000329D48 /* Account.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Account.html; sourceTree = "<group>"; };
-		AE2DA21C2213BC4000329D48 /* jquery.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
-		AE2DA21D2213BC4000329D48 /* jazzy.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jazzy.js; sourceTree = "<group>"; };
-		AE2DA21F2213BC4000329D48 /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carat.png; sourceTree = "<group>"; };
-		AE2DA2202213BC4000329D48 /* dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dash.png; sourceTree = "<group>"; };
-		AE2DA2212213BC4000329D48 /* gh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gh.png; sourceTree = "<group>"; };
-		AE2DA2222213BC4000329D48 /* undocumented.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = undocumented.json; sourceTree = "<group>"; };
-		AE2DA2232213BC4000329D48 /* badge.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = badge.svg; sourceTree = "<group>"; };
-		AE2DA2242213BC4000329D48 /* Classes.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Classes.html; sourceTree = "<group>"; };
-		AE2DA2292213BC4000329D48 /* docSet.dsidx */ = {isa = PBXFileReference; lastKnownFileType = file; path = docSet.dsidx; sourceTree = "<group>"; };
-		AE2DA22B2213BC4000329D48 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = index.html; sourceTree = "<group>"; };
-		AE2DA22C2213BC4000329D48 /* search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
-		AE2DA22E2213BC4000329D48 /* highlight.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = highlight.css; sourceTree = "<group>"; };
-		AE2DA22F2213BC4000329D48 /* jazzy.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jazzy.css; sourceTree = "<group>"; };
-		AE2DA2312213BC4000329D48 /* Account.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = Account.html; sourceTree = "<group>"; };
-		AE2DA2332213BC4000329D48 /* jquery.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
-		AE2DA2342213BC4000329D48 /* jazzy.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jazzy.js; sourceTree = "<group>"; };
-		AE2DA2362213BC4000329D48 /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carat.png; sourceTree = "<group>"; };
-		AE2DA2372213BC4000329D48 /* dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dash.png; sourceTree = "<group>"; };
-		AE2DA2382213BC4000329D48 /* gh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gh.png; sourceTree = "<group>"; };
-		AE2DA2392213BC4000329D48 /* Classes.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = Classes.html; sourceTree = "<group>"; };
-		AE2DA23A2213BC4000329D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE2DA23B2213BC4000329D48 /* .tgz */ = {isa = PBXFileReference; lastKnownFileType = file; path = .tgz; sourceTree = "<group>"; };
 		AE3E7312221236EA000313B2 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		AE56D6892213C28F00F64FDB /* Structs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Structs.html; sourceTree = "<group>"; };
+		AE56D68A2213C28F00F64FDB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		AE56D68B2213C28F00F64FDB /* Functions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Functions.html; sourceTree = "<group>"; };
+		AE56D68C2213C28F00F64FDB /* search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
+		AE56D68E2213C28F00F64FDB /* highlight.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = highlight.css; sourceTree = "<group>"; };
+		AE56D68F2213C28F00F64FDB /* jazzy.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jazzy.css; sourceTree = "<group>"; };
+		AE56D6912213C28F00F64FDB /* MessagesViewController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MessagesViewController.html; sourceTree = "<group>"; };
+		AE56D6922213C28F00F64FDB /* Account.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Account.html; sourceTree = "<group>"; };
+		AE56D6942213C28F00F64FDB /* Setting.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Setting.html; sourceTree = "<group>"; };
+		AE56D6952213C28F00F64FDB /* SortingType.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SortingType.html; sourceTree = "<group>"; };
+		AE56D6962213C28F00F64FDB /* PasswordCollectionViewCell.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PasswordCollectionViewCell.html; sourceTree = "<group>"; };
+		AE56D6972213C28F00F64FDB /* UserSettings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UserSettings.html; sourceTree = "<group>"; };
+		AE56D6982213C28F00F64FDB /* PersistentContainer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PersistentContainer.html; sourceTree = "<group>"; };
+		AE56D69A2213C28F00F64FDB /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		AE56D69B2213C28F00F64FDB /* jazzy.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jazzy.js; sourceTree = "<group>"; };
+		AE56D69C2213C28F00F64FDB /* Global Variables.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Global Variables.html"; sourceTree = "<group>"; };
+		AE56D69D2213C28F00F64FDB /* Extensions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Extensions.html; sourceTree = "<group>"; };
+		AE56D69F2213C28F00F64FDB /* Data.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Data.html; sourceTree = "<group>"; };
+		AE56D6A12213C28F00F64FDB /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carat.png; sourceTree = "<group>"; };
+		AE56D6A22213C28F00F64FDB /* dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dash.png; sourceTree = "<group>"; };
+		AE56D6A32213C28F00F64FDB /* gh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gh.png; sourceTree = "<group>"; };
+		AE56D6A42213C28F00F64FDB /* undocumented.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = undocumented.json; sourceTree = "<group>"; };
+		AE56D6A52213C28F00F64FDB /* badge.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = badge.svg; sourceTree = "<group>"; };
+		AE56D6A82213C28F00F64FDB /* KeychainError.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KeychainError.html; sourceTree = "<group>"; };
+		AE56D6A92213C28F00F64FDB /* KeychainHelper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KeychainHelper.html; sourceTree = "<group>"; };
+		AE56D6AA2213C28F00F64FDB /* DataEncoder.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DataEncoder.html; sourceTree = "<group>"; };
+		AE56D6AB2213C28F00F64FDB /* KeyHelper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KeyHelper.html; sourceTree = "<group>"; };
+		AE56D6AC2213C28F00F64FDB /* CDHelper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CDHelper.html; sourceTree = "<group>"; };
+		AE56D6AD2213C28F00F64FDB /* DataDecoder.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DataDecoder.html; sourceTree = "<group>"; };
+		AE56D6AE2213C28F00F64FDB /* Classes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Classes.html; sourceTree = "<group>"; };
+		AE56D6B32213C28F00F64FDB /* docSet.dsidx */ = {isa = PBXFileReference; lastKnownFileType = file; path = docSet.dsidx; sourceTree = "<group>"; };
+		AE56D6B52213C28F00F64FDB /* Structs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = Structs.html; sourceTree = "<group>"; };
+		AE56D6B62213C28F00F64FDB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = index.html; sourceTree = "<group>"; };
+		AE56D6B72213C28F00F64FDB /* Functions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = Functions.html; sourceTree = "<group>"; };
+		AE56D6B82213C28F00F64FDB /* search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
+		AE56D6BA2213C28F00F64FDB /* highlight.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = highlight.css; sourceTree = "<group>"; };
+		AE56D6BB2213C28F00F64FDB /* jazzy.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = jazzy.css; sourceTree = "<group>"; };
+		AE56D6BD2213C28F00F64FDB /* MessagesViewController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = MessagesViewController.html; sourceTree = "<group>"; };
+		AE56D6BE2213C28F00F64FDB /* Account.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = Account.html; sourceTree = "<group>"; };
+		AE56D6C02213C28F00F64FDB /* Setting.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = Setting.html; sourceTree = "<group>"; };
+		AE56D6C12213C28F00F64FDB /* SortingType.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = SortingType.html; sourceTree = "<group>"; };
+		AE56D6C22213C28F00F64FDB /* PasswordCollectionViewCell.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = PasswordCollectionViewCell.html; sourceTree = "<group>"; };
+		AE56D6C32213C28F00F64FDB /* UserSettings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = UserSettings.html; sourceTree = "<group>"; };
+		AE56D6C42213C28F00F64FDB /* PersistentContainer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = PersistentContainer.html; sourceTree = "<group>"; };
+		AE56D6C62213C28F00F64FDB /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		AE56D6C72213C28F00F64FDB /* jazzy.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jazzy.js; sourceTree = "<group>"; };
+		AE56D6C82213C28F00F64FDB /* Global Variables.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = "Global Variables.html"; sourceTree = "<group>"; };
+		AE56D6C92213C28F00F64FDB /* Extensions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = Extensions.html; sourceTree = "<group>"; };
+		AE56D6CB2213C28F00F64FDB /* Data.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = Data.html; sourceTree = "<group>"; };
+		AE56D6CD2213C28F00F64FDB /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carat.png; sourceTree = "<group>"; };
+		AE56D6CE2213C28F00F64FDB /* dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dash.png; sourceTree = "<group>"; };
+		AE56D6CF2213C28F00F64FDB /* gh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gh.png; sourceTree = "<group>"; };
+		AE56D6D02213C28F00F64FDB /* undocumented.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = undocumented.json; sourceTree = "<group>"; };
+		AE56D6D12213C28F00F64FDB /* badge.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = badge.svg; sourceTree = "<group>"; };
+		AE56D6D42213C28F00F64FDB /* KeychainError.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KeychainError.html; sourceTree = "<group>"; };
+		AE56D6D52213C28F00F64FDB /* KeychainHelper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KeychainHelper.html; sourceTree = "<group>"; };
+		AE56D6D62213C28F00F64FDB /* DataEncoder.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = DataEncoder.html; sourceTree = "<group>"; };
+		AE56D6D72213C28F00F64FDB /* KeyHelper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = KeyHelper.html; sourceTree = "<group>"; };
+		AE56D6D82213C28F00F64FDB /* CDHelper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = CDHelper.html; sourceTree = "<group>"; };
+		AE56D6D92213C28F00F64FDB /* DataDecoder.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = DataDecoder.html; sourceTree = "<group>"; };
+		AE56D6DA2213C28F00F64FDB /* Classes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = Classes.html; sourceTree = "<group>"; };
+		AE56D6DB2213C28F00F64FDB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE56D6DC2213C28F00F64FDB /* .tgz */ = {isa = PBXFileReference; lastKnownFileType = file; path = .tgz; sourceTree = "<group>"; };
 		AE586E9D21D9D2260066BC0E /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		AE586E9F21D9D2590066BC0E /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
 		AE586EA121D9D7330066BC0E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -214,148 +313,248 @@
 			path = "Classes and Structs";
 			sourceTree = "<group>";
 		};
-		AE2DA2132213BC4000329D48 /* docs */ = {
+		AE56D6882213C28F00F64FDB /* docs */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA2142213BC4000329D48 /* index.html */,
-				AE2DA2152213BC4000329D48 /* search.json */,
-				AE2DA2162213BC4000329D48 /* css */,
-				AE2DA2192213BC4000329D48 /* Classes */,
-				AE2DA21B2213BC4000329D48 /* js */,
-				AE2DA21E2213BC4000329D48 /* img */,
-				AE2DA2222213BC4000329D48 /* undocumented.json */,
-				AE2DA2232213BC4000329D48 /* badge.svg */,
-				AE2DA2242213BC4000329D48 /* Classes.html */,
-				AE2DA2252213BC4000329D48 /* docsets */,
+				AE56D6892213C28F00F64FDB /* Structs.html */,
+				AE56D68A2213C28F00F64FDB /* index.html */,
+				AE56D68B2213C28F00F64FDB /* Functions.html */,
+				AE56D68C2213C28F00F64FDB /* search.json */,
+				AE56D68D2213C28F00F64FDB /* css */,
+				AE56D6902213C28F00F64FDB /* Classes */,
+				AE56D6992213C28F00F64FDB /* js */,
+				AE56D69C2213C28F00F64FDB /* Global Variables.html */,
+				AE56D69D2213C28F00F64FDB /* Extensions.html */,
+				AE56D69E2213C28F00F64FDB /* Extensions */,
+				AE56D6A02213C28F00F64FDB /* img */,
+				AE56D6A42213C28F00F64FDB /* undocumented.json */,
+				AE56D6A52213C28F00F64FDB /* badge.svg */,
+				AE56D6A62213C28F00F64FDB /* Structs */,
+				AE56D6AE2213C28F00F64FDB /* Classes.html */,
+				AE56D6AF2213C28F00F64FDB /* docsets */,
 			);
 			path = docs;
 			sourceTree = "<group>";
 		};
-		AE2DA2162213BC4000329D48 /* css */ = {
+		AE56D68D2213C28F00F64FDB /* css */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA2172213BC4000329D48 /* highlight.css */,
-				AE2DA2182213BC4000329D48 /* jazzy.css */,
+				AE56D68E2213C28F00F64FDB /* highlight.css */,
+				AE56D68F2213C28F00F64FDB /* jazzy.css */,
 			);
 			path = css;
 			sourceTree = "<group>";
 		};
-		AE2DA2192213BC4000329D48 /* Classes */ = {
+		AE56D6902213C28F00F64FDB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA21A2213BC4000329D48 /* Account.html */,
+				AE56D6912213C28F00F64FDB /* MessagesViewController.html */,
+				AE56D6922213C28F00F64FDB /* Account.html */,
+				AE56D6932213C28F00F64FDB /* UserSettings */,
+				AE56D6962213C28F00F64FDB /* PasswordCollectionViewCell.html */,
+				AE56D6972213C28F00F64FDB /* UserSettings.html */,
+				AE56D6982213C28F00F64FDB /* PersistentContainer.html */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		AE2DA21B2213BC4000329D48 /* js */ = {
+		AE56D6932213C28F00F64FDB /* UserSettings */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA21C2213BC4000329D48 /* jquery.min.js */,
-				AE2DA21D2213BC4000329D48 /* jazzy.js */,
+				AE56D6942213C28F00F64FDB /* Setting.html */,
+				AE56D6952213C28F00F64FDB /* SortingType.html */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		AE56D6992213C28F00F64FDB /* js */ = {
+			isa = PBXGroup;
+			children = (
+				AE56D69A2213C28F00F64FDB /* jquery.min.js */,
+				AE56D69B2213C28F00F64FDB /* jazzy.js */,
 			);
 			path = js;
 			sourceTree = "<group>";
 		};
-		AE2DA21E2213BC4000329D48 /* img */ = {
+		AE56D69E2213C28F00F64FDB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA21F2213BC4000329D48 /* carat.png */,
-				AE2DA2202213BC4000329D48 /* dash.png */,
-				AE2DA2212213BC4000329D48 /* gh.png */,
+				AE56D69F2213C28F00F64FDB /* Data.html */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE56D6A02213C28F00F64FDB /* img */ = {
+			isa = PBXGroup;
+			children = (
+				AE56D6A12213C28F00F64FDB /* carat.png */,
+				AE56D6A22213C28F00F64FDB /* dash.png */,
+				AE56D6A32213C28F00F64FDB /* gh.png */,
 			);
 			path = img;
 			sourceTree = "<group>";
 		};
-		AE2DA2252213BC4000329D48 /* docsets */ = {
+		AE56D6A62213C28F00F64FDB /* Structs */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA2262213BC4000329D48 /* .docset */,
-				AE2DA23B2213BC4000329D48 /* .tgz */,
+				AE56D6A72213C28F00F64FDB /* KeychainHelper */,
+				AE56D6A92213C28F00F64FDB /* KeychainHelper.html */,
+				AE56D6AA2213C28F00F64FDB /* DataEncoder.html */,
+				AE56D6AB2213C28F00F64FDB /* KeyHelper.html */,
+				AE56D6AC2213C28F00F64FDB /* CDHelper.html */,
+				AE56D6AD2213C28F00F64FDB /* DataDecoder.html */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		AE56D6A72213C28F00F64FDB /* KeychainHelper */ = {
+			isa = PBXGroup;
+			children = (
+				AE56D6A82213C28F00F64FDB /* KeychainError.html */,
+			);
+			path = KeychainHelper;
+			sourceTree = "<group>";
+		};
+		AE56D6AF2213C28F00F64FDB /* docsets */ = {
+			isa = PBXGroup;
+			children = (
+				AE56D6B02213C28F00F64FDB /* .docset */,
+				AE56D6DC2213C28F00F64FDB /* .tgz */,
 			);
 			path = docsets;
 			sourceTree = "<group>";
 		};
-		AE2DA2262213BC4000329D48 /* .docset */ = {
+		AE56D6B02213C28F00F64FDB /* .docset */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA2272213BC4000329D48 /* Contents */,
+				AE56D6B12213C28F00F64FDB /* Contents */,
 			);
 			path = .docset;
 			sourceTree = "<group>";
 		};
-		AE2DA2272213BC4000329D48 /* Contents */ = {
+		AE56D6B12213C28F00F64FDB /* Contents */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA2282213BC4000329D48 /* Resources */,
-				AE2DA23A2213BC4000329D48 /* Info.plist */,
+				AE56D6B22213C28F00F64FDB /* Resources */,
+				AE56D6DB2213C28F00F64FDB /* Info.plist */,
 			);
 			path = Contents;
 			sourceTree = "<group>";
 		};
-		AE2DA2282213BC4000329D48 /* Resources */ = {
+		AE56D6B22213C28F00F64FDB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA2292213BC4000329D48 /* docSet.dsidx */,
-				AE2DA22A2213BC4000329D48 /* Documents */,
+				AE56D6B32213C28F00F64FDB /* docSet.dsidx */,
+				AE56D6B42213C28F00F64FDB /* Documents */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		AE2DA22A2213BC4000329D48 /* Documents */ = {
+		AE56D6B42213C28F00F64FDB /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA22B2213BC4000329D48 /* index.html */,
-				AE2DA22C2213BC4000329D48 /* search.json */,
-				AE2DA22D2213BC4000329D48 /* css */,
-				AE2DA2302213BC4000329D48 /* Classes */,
-				AE2DA2322213BC4000329D48 /* js */,
-				AE2DA2352213BC4000329D48 /* img */,
-				AE2DA2392213BC4000329D48 /* Classes.html */,
+				AE56D6B52213C28F00F64FDB /* Structs.html */,
+				AE56D6B62213C28F00F64FDB /* index.html */,
+				AE56D6B72213C28F00F64FDB /* Functions.html */,
+				AE56D6B82213C28F00F64FDB /* search.json */,
+				AE56D6B92213C28F00F64FDB /* css */,
+				AE56D6BC2213C28F00F64FDB /* Classes */,
+				AE56D6C52213C28F00F64FDB /* js */,
+				AE56D6C82213C28F00F64FDB /* Global Variables.html */,
+				AE56D6C92213C28F00F64FDB /* Extensions.html */,
+				AE56D6CA2213C28F00F64FDB /* Extensions */,
+				AE56D6CC2213C28F00F64FDB /* img */,
+				AE56D6D02213C28F00F64FDB /* undocumented.json */,
+				AE56D6D12213C28F00F64FDB /* badge.svg */,
+				AE56D6D22213C28F00F64FDB /* Structs */,
+				AE56D6DA2213C28F00F64FDB /* Classes.html */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
 		};
-		AE2DA22D2213BC4000329D48 /* css */ = {
+		AE56D6B92213C28F00F64FDB /* css */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA22E2213BC4000329D48 /* highlight.css */,
-				AE2DA22F2213BC4000329D48 /* jazzy.css */,
+				AE56D6BA2213C28F00F64FDB /* highlight.css */,
+				AE56D6BB2213C28F00F64FDB /* jazzy.css */,
 			);
 			path = css;
 			sourceTree = "<group>";
 		};
-		AE2DA2302213BC4000329D48 /* Classes */ = {
+		AE56D6BC2213C28F00F64FDB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA2312213BC4000329D48 /* Account.html */,
+				AE56D6BD2213C28F00F64FDB /* MessagesViewController.html */,
+				AE56D6BE2213C28F00F64FDB /* Account.html */,
+				AE56D6BF2213C28F00F64FDB /* UserSettings */,
+				AE56D6C22213C28F00F64FDB /* PasswordCollectionViewCell.html */,
+				AE56D6C32213C28F00F64FDB /* UserSettings.html */,
+				AE56D6C42213C28F00F64FDB /* PersistentContainer.html */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		AE2DA2322213BC4000329D48 /* js */ = {
+		AE56D6BF2213C28F00F64FDB /* UserSettings */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA2332213BC4000329D48 /* jquery.min.js */,
-				AE2DA2342213BC4000329D48 /* jazzy.js */,
+				AE56D6C02213C28F00F64FDB /* Setting.html */,
+				AE56D6C12213C28F00F64FDB /* SortingType.html */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		AE56D6C52213C28F00F64FDB /* js */ = {
+			isa = PBXGroup;
+			children = (
+				AE56D6C62213C28F00F64FDB /* jquery.min.js */,
+				AE56D6C72213C28F00F64FDB /* jazzy.js */,
 			);
 			path = js;
 			sourceTree = "<group>";
 		};
-		AE2DA2352213BC4000329D48 /* img */ = {
+		AE56D6CA2213C28F00F64FDB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AE2DA2362213BC4000329D48 /* carat.png */,
-				AE2DA2372213BC4000329D48 /* dash.png */,
-				AE2DA2382213BC4000329D48 /* gh.png */,
+				AE56D6CB2213C28F00F64FDB /* Data.html */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE56D6CC2213C28F00F64FDB /* img */ = {
+			isa = PBXGroup;
+			children = (
+				AE56D6CD2213C28F00F64FDB /* carat.png */,
+				AE56D6CE2213C28F00F64FDB /* dash.png */,
+				AE56D6CF2213C28F00F64FDB /* gh.png */,
 			);
 			path = img;
+			sourceTree = "<group>";
+		};
+		AE56D6D22213C28F00F64FDB /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				AE56D6D32213C28F00F64FDB /* KeychainHelper */,
+				AE56D6D52213C28F00F64FDB /* KeychainHelper.html */,
+				AE56D6D62213C28F00F64FDB /* DataEncoder.html */,
+				AE56D6D72213C28F00F64FDB /* KeyHelper.html */,
+				AE56D6D82213C28F00F64FDB /* CDHelper.html */,
+				AE56D6D92213C28F00F64FDB /* DataDecoder.html */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		AE56D6D32213C28F00F64FDB /* KeychainHelper */ = {
+			isa = PBXGroup;
+			children = (
+				AE56D6D42213C28F00F64FDB /* KeychainError.html */,
+			);
+			path = KeychainHelper;
 			sourceTree = "<group>";
 		};
 		AE58FEE521D9B88900C094F1 = {
 			isa = PBXGroup;
 			children = (
-				AE2DA2132213BC4000329D48 /* docs */,
+				AE56D6882213C28F00F64FDB /* docs */,
 				AE81464521DBF16300F06C96 /* Encryption and Decryption */,
 				AE58FF2321D9BA0900C094F1 /* Data Management */,
 				AE58FEF021D9B88A00C094F1 /* OpenPass */,
@@ -709,9 +908,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE56D6F12213C28F00F64FDB /* gh.png in Resources */,
+				AE56D6FA2213C28F00F64FDB /* Classes.html in Resources */,
+				AE56D7072213C28F00F64FDB /* UserSettings.html in Resources */,
+				AE56D6DE2213C28F00F64FDB /* index.html in Resources */,
+				AE56D7082213C28F00F64FDB /* PersistentContainer.html in Resources */,
+				AE56D7152213C28F00F64FDB /* DataEncoder.html in Resources */,
+				AE56D7052213C28F00F64FDB /* SortingType.html in Resources */,
+				AE56D7162213C28F00F64FDB /* KeyHelper.html in Resources */,
+				AE56D70D2213C28F00F64FDB /* Data.html in Resources */,
+				AE56D6EC2213C28F00F64FDB /* Global Variables.html in Resources */,
+				AE56D6FB2213C28F00F64FDB /* docSet.dsidx in Resources */,
+				AE56D6F92213C28F00F64FDB /* DataDecoder.html in Resources */,
+				AE56D7032213C28F00F64FDB /* Account.html in Resources */,
+				AE56D7092213C28F00F64FDB /* jquery.min.js in Resources */,
+				AE56D7042213C28F00F64FDB /* Setting.html in Resources */,
 				AE58FEFC21D9B88D00C094F1 /* Assets.xcassets in Resources */,
+				AE56D6F32213C28F00F64FDB /* badge.svg in Resources */,
+				AE56D6E02213C28F00F64FDB /* search.json in Resources */,
+				AE56D7182213C28F00F64FDB /* DataDecoder.html in Resources */,
 				AE58FEF721D9B88A00C094F1 /* Main.storyboard in Resources */,
+				AE56D7172213C28F00F64FDB /* CDHelper.html in Resources */,
+				AE56D6E12213C28F00F64FDB /* highlight.css in Resources */,
+				AE56D6ED2213C28F00F64FDB /* Extensions.html in Resources */,
+				AE56D7022213C28F00F64FDB /* MessagesViewController.html in Resources */,
+				AE56D7142213C28F00F64FDB /* KeychainHelper.html in Resources */,
+				AE56D71B2213C28F00F64FDB /* .tgz in Resources */,
+				AE56D6E52213C28F00F64FDB /* Setting.html in Resources */,
+				AE56D6F52213C28F00F64FDB /* KeychainHelper.html in Resources */,
+				AE56D6E82213C28F00F64FDB /* UserSettings.html in Resources */,
+				AE56D6FF2213C28F00F64FDB /* search.json in Resources */,
+				AE56D70E2213C28F00F64FDB /* carat.png in Resources */,
+				AE56D7132213C28F00F64FDB /* KeychainError.html in Resources */,
+				AE56D7012213C28F00F64FDB /* jazzy.css in Resources */,
+				AE56D6EF2213C28F00F64FDB /* carat.png in Resources */,
 				AEC191FB21E435E900283478 /* Launch.storyboard in Resources */,
+				AE56D6E42213C28F00F64FDB /* Account.html in Resources */,
+				AE56D70F2213C28F00F64FDB /* dash.png in Resources */,
+				AE56D7122213C28F00F64FDB /* badge.svg in Resources */,
+				AE56D6FC2213C28F00F64FDB /* Structs.html in Resources */,
+				AE56D71A2213C28F00F64FDB /* Info.plist in Resources */,
+				AE56D6FE2213C28F00F64FDB /* Functions.html in Resources */,
+				AE56D7002213C28F00F64FDB /* highlight.css in Resources */,
+				AE56D6E22213C28F00F64FDB /* jazzy.css in Resources */,
+				AE56D6F22213C28F00F64FDB /* undocumented.json in Resources */,
+				AE56D6FD2213C28F00F64FDB /* index.html in Resources */,
+				AE56D7112213C28F00F64FDB /* undocumented.json in Resources */,
+				AE56D6E62213C28F00F64FDB /* SortingType.html in Resources */,
+				AE56D6F72213C28F00F64FDB /* KeyHelper.html in Resources */,
+				AE56D6F82213C28F00F64FDB /* CDHelper.html in Resources */,
+				AE56D70B2213C28F00F64FDB /* Global Variables.html in Resources */,
+				AE56D6E72213C28F00F64FDB /* PasswordCollectionViewCell.html in Resources */,
+				AE56D6EA2213C28F00F64FDB /* jquery.min.js in Resources */,
+				AE56D6EB2213C28F00F64FDB /* jazzy.js in Resources */,
+				AE56D6DF2213C28F00F64FDB /* Functions.html in Resources */,
+				AE56D7062213C28F00F64FDB /* PasswordCollectionViewCell.html in Resources */,
+				AE56D7102213C28F00F64FDB /* gh.png in Resources */,
+				AE56D6DD2213C28F00F64FDB /* Structs.html in Resources */,
+				AE56D6E32213C28F00F64FDB /* MessagesViewController.html in Resources */,
+				AE56D6F02213C28F00F64FDB /* dash.png in Resources */,
+				AE56D6F62213C28F00F64FDB /* DataEncoder.html in Resources */,
+				AE56D70A2213C28F00F64FDB /* jazzy.js in Resources */,
+				AE56D6E92213C28F00F64FDB /* PersistentContainer.html in Resources */,
+				AE56D70C2213C28F00F64FDB /* Extensions.html in Resources */,
+				AE56D7192213C28F00F64FDB /* Classes.html in Resources */,
+				AE56D6F42213C28F00F64FDB /* KeychainError.html in Resources */,
+				AE56D6EE2213C28F00F64FDB /* Data.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
